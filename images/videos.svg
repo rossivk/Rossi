@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.11 30.87">
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_11" data-name="Layer 11">
+      <g>
+        <rect x="2.38" y="2.51" width="31.24" height="18.93" fill="none" stroke="#092629" stroke-miterlimit="10"/>
+        <path d="M18.2,24.73l16,0a1.42,1.42,0,0,0,1.42-1.42V1.92A1.42,1.42,0,0,0,34.19.5H1.92A1.41,1.41,0,0,0,.5,1.92V23.27a1.41,1.41,0,0,0,1.42,1.42l12.75.08h.85" fill="none" stroke="#092629" stroke-miterlimit="10"/>
+        <line x1="14.67" y1="28.18" x2="14.67" y2="24.77" fill="none" stroke="#092629" stroke-miterlimit="10"/>
+        <line x1="21.52" y1="28.24" x2="21.52" y2="24.78" fill="none" stroke="#092629" stroke-miterlimit="10"/>
+        <rect x="11.76" y="28.71" width="12.66" height="1.66" rx="0.83" fill="none" stroke="#092629" stroke-miterlimit="10"/>
+        <path d="M16.22,4.73l6.23,3.49a.78.78,0,0,1,0,1.36l-6.19,3.66a.78.78,0,0,1-1.19-.67l0-7.15A.79.79,0,0,1,16.22,4.73Z" fill="none" stroke="#e59678" stroke-miterlimit="10"/>
+        <line x1="4.01" y1="16.2" x2="13.33" y2="16.2" fill="none" stroke="#e59678" stroke-miterlimit="10" opacity="0.25"/>
+        <line x1="16.27" y1="16.2" x2="32.35" y2="16.2" fill="none" stroke="#e59678" stroke-miterlimit="10" opacity="0.25"/>
+        <line x1="3.97" y1="18.71" x2="7.73" y2="18.71" fill="none" stroke="#e59678" stroke-miterlimit="10" opacity="0.25"/>
+        <line x1="27.56" y1="18.71" x2="32.31" y2="18.71" fill="none" stroke="#e59678" stroke-miterlimit="10" opacity="0.25"/>
+        <line x1="10.97" y1="18.71" x2="24.56" y2="18.71" fill="none" stroke="#e59678" stroke-miterlimit="10" opacity="0.25"/>
+        <circle cx="26.07" cy="18.82" r="1.42" fill="none" stroke="#e59678" stroke-miterlimit="10"/>
+        <circle cx="9.28" cy="18.81" r="1.42" fill="none" stroke="#e59678" stroke-miterlimit="10"/>
+        <circle cx="14.76" cy="16.22" r="1.42" fill="none" stroke="#e59678" stroke-miterlimit="10"/>
+      </g>
+    </g>
+  </g>
+</svg>

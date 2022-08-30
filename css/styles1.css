@@ -1,0 +1,809 @@
+:root {
+    --darkSalmon: #E49678;
+    --darkJungleGreen: #082629;
+    --midnightGreen: #125B62;
+    --middleBlueGreen: #81C6BF;
+    --azureXwebColor: #D9E9E9;
+    --backgroundCoralLight: #F4F0EE;
+    --backgroundBlueGreen: #D9E9E7;
+    --visitedLinks: #c04d1f;
+    --activeLink: #004349;
+
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--backgroundCoralLight);
+    color: var(--darkJungleGreen);
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--darkJungleGreen);
+}
+
+a:link {
+    color: var(--darkJungleGreen);
+}
+
+/* visited link */
+/* a:visited {
+    color: var(--visitedLinks);
+} */
+
+/* mouse over link */
+a:hover {
+    color: var(--visitedLinks);
+}
+
+/* selected link */
+a:active {
+    color: var(--activeLink);
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 2.25em;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Red Hat Text', sans-serif;
+
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.125em;
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 2em;
+    font-family: 'Bonheur Royale', cursive;
+    font-weight: 400;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+    margin: 0;
+}
+
+button {
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: 0.5s ease-in-out;
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 600;
+    font-size: 0.875em;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 1px solid var(--midnightGreen);
+    background-color: transparent;
+    scale: 1.2em;
+
+}
+
+.color {
+    color: #E49678;
+}
+
+.background-logo {
+    background-image: url(../images/logo-E49678.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% top;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* header */
+
+
+.navbar {
+    position: relative;
+}
+
+.logo img {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 50px;
+
+}
+
+
+.nav-container {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: var(--middleBlueGreen);
+    height: 75vh;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.nav-link-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    text-align: center;
+    margin: 50px auto 0;
+}
+
+.nav-link-wrapper li {
+    margin: 10px 0;
+}
+
+.hamburger-icon {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+/* *********************************** */
+
+
+
+
+/* tittle handwritten animation svg */
+
+.hiIamRossi {
+    width: 20vw;
+    min-width: 150px;
+    max-width: 250px;
+    margin: 20% 0 50px;
+}
+
+.hiIamRossi .mask {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+
+@keyframes strokeOffset {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#mask-h-1 {
+    animation: strokeOffset 0.05s linear forwards;
+}
+
+#mask-h-2 {
+    animation: strokeOffset 0.05s linear forwards 0.05s;
+}
+
+#mask-h-3 {
+    animation: strokeOffset 0.05s linear forwards 0.15s;
+}
+
+#mask-i1-1 {
+    animation: strokeOffset 0.05s linear forwards 0.2s;
+}
+
+#mask-i1-2 {
+    animation: strokeOffset 0.05s linear forwards 0.25s;
+}
+
+#mask-comma {
+    animation: strokeOffset 0.05s linear forwards 0.3s;
+}
+
+#mask-iI-1 {
+    animation: strokeOffset 0.05s linear forwards 0.35s;
+}
+
+#mask-iI-2 {
+    animation: strokeOffset 0.05s linear forwards 0.4s;
+}
+
+#mask-iI-3 {
+    animation: strokeOffset 0.05s linear forwards 0.45s;
+}
+
+#mask-a {
+    animation: strokeOffset 0.05s linear forwards 0.5s;
+}
+
+#mask-m {
+    animation: strokeOffset 0.05s linear forwards 0.55s;
+}
+
+#mask-r-1 {
+    animation: strokeOffset 0.05s linear forwards 0.6s;
+}
+
+#mask-r-2 {
+    animation: strokeOffset 0.05s linear forwards 0.65s;
+}
+
+#mask-o {
+    animation: strokeOffset 0.05s linear forwards 0.7s;
+}
+
+#mask-s {
+    animation: strokeOffset 0.05s linear forwards 0.75s;
+}
+
+#mask-ss {
+    animation: strokeOffset 0.05s linear forwards 0.8s;
+}
+
+#mask-i2-1 {
+    animation: strokeOffset 0.05s linear forwards 0.85s;
+}
+
+#mask-i2-2 {
+    animation: strokeOffset 0.05s linear forwards 0.9s;
+}
+
+
+/* *********************************** */
+
+.top-section {
+    position: relative;
+    opacity: 1;
+    margin: 0 10vw;
+    height: 100vh;
+    max-height: 900px;
+}
+
+.top-section-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(129, 198, 191, 0.25);
+    height: 85%;
+    max-width: 1440px;
+    min-width: 180px;
+    margin: 7.5vh auto;
+
+
+}
+
+.top-section tittle {
+    text-align: center;
+}
+
+.top-section .social-icons {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+}
+
+.top-section .social-icons li img {
+    max-width: none;
+    margin-left: 25px;
+}
+
+.top-section-down {
+    margin: 50px auto;
+}
+
+.top-section-down img {
+    transition: 3s;
+}
+
+.top-section-down img:hover {
+    scale: 1.5;
+}
+
+.top-section-box-left img {
+    position: absolute;
+    left: -100px;
+    top: 55%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    display: none;
+}
+
+
+.top-section-box-right img {
+    position: absolute;
+    left: 0;
+    bottom: -37.5px;
+    width: 75px;
+    -webkit-animation: spin 30s linear infinite;
+    -moz-animation: spin 30s linear infinite;
+    animation: spin 30s linear infinite;
+    animation-name: spinUpDown;
+}
+
+@-moz-keyframes spinUpDown {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spinUpDown {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spinUpDown {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.top-section-box-bottom img {
+    position: absolute;
+    left: 0;
+    top: 343px;
+    width: 75px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    display: none;
+}
+
+/* what I do */
+
+#what-i-do {
+    background-color: #F4F0EE;
+    position: relative;
+    padding: 75px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.what-i-do-containers-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.875em;
+}
+
+.what-i-do-containers-wrapper h2 {
+    margin-bottom: 0 0 25px 0;
+}
+
+
+.what-i-do-containers-wrapper .lottie {
+    margin: 0 auto;
+    width: 125px;
+}
+
+.web-design-container,
+.graph-design-container,
+.anim-design-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin: 50px auto 0;
+    padding: 2%;
+    border-radius: 10px;
+    border-bottom: solid 1px var(--darkSalmon);
+    box-shadow: 2px 2px 10px 5px #36313046;
+}
+
+.web-design-container,
+.web-design-container p {
+    background: #F2E3DC;
+}
+
+.graph-design-container,
+.graph-design-container p {
+    background: #EED1C5;
+}
+
+.anim-design-container,
+.anim-design-container p {
+    background: #D7E6E2;
+}
+
+.web-design-container p,
+.graph-design-container p,
+.anim-design-container p {
+    position: absolute;
+    top: 0;
+    width: 150px;
+}
+
+.web-design-container button,
+.graph-design-container button,
+.anim-design-container button {
+    border: none;
+    background-color: transparent;
+    margin: 50px auto 25px;
+}
+
+#showTextWeb,
+#showTextGraph,
+#showTextAnim {
+    display: none;
+}
+
+.what-i-do-get-in-touch {
+    background: var(--middleBlueGreen);
+    margin: 75px 0 0;
+}
+
+
+/**recent work ********************/
+
+#recent-work {
+    padding: 5px 0;
+}
+
+.recent-work-containers-wrapper {
+    position: relative;
+    margin: 100px 0;
+}
+
+
+
+.recent-work-text-container-one {
+    background-color: #FFC7B1;
+
+}
+
+.recent-work-text-container-two {
+    background-color: #81C6BF;
+
+}
+
+.recent-work-text-container-one,
+.recent-work-text-container-two {
+    padding: 25px 25px 25px 10vw;
+    margin: 0 10vw 0 0;
+    text-align: left;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 2px 2px 10px 5px #36313046;
+
+}
+
+.recent-work-img-container-one,
+.recent-work-img-container-two {
+    position: absolute;
+    top: 30%;
+    right: -25px;
+    text-align: right;
+    margin-right: 10vw;
+}
+
+
+.recent-work-image-one,
+.recent-work-image-two {
+    width: 100px;
+}
+
+
+.recent-work-get-in-touch {
+    margin: 50px 0 0 10vw;
+    float: left;
+    width: 150px;
+}
+
+
+.recent-work-learn-more {
+    padding: 0;
+}
+
+.recent-work-learn-more:hover {
+    border: none;
+}
+
+.recent-work-check-mywork {
+    background: var(--azureXwebColor);
+}
+
+.recent-work-learn-more .arrow-left {
+    width: 20px;
+    height: 20px;
+    float: right;
+    padding-right: 5px;
+    transform: rotateY(180deg)
+}
+
+/* ***************************** */
+
+
+/**about me ********************/
+
+#about-me {
+    background-color: var(--backgroundCoralLight);
+    margin: auto;
+    width: 100vw;
+    max-width: 1440px;
+
+}
+
+.about-me-wrapper {
+    position: relative;
+}
+
+
+.about-me-wrapper .about-me-images {
+    background-color: rgba(129, 198, 191, 0.25);
+    position: relative;
+}
+
+.about-me-wrapper .about-me-info {
+    background-color: #F4F0EE;
+    padding: 100px 25px 50px;
+}
+
+.about-me-wrapper .about-me-images.one,
+.about-me-wrapper .about-me-images.two {
+    position: absolute;
+}
+
+.about-me-wrapper .about-me-images.one {
+    top: 155px;
+    left: 300px;
+}
+
+.about-me-wrapper .about-me-images.two {
+    top: 50px;
+    left: 100px;
+}
+
+.about-me-wrapper .about-me-info .about-me-info-text {
+    margin: 0 10vw;
+}
+
+.about-me-wrapper .about-me-info p {
+    margin: 25px auto;
+    max-width: 425px;
+}
+
+.about-me-wrapper .about-me-info button {
+    margin-top: 50px;
+}
+
+.lottie-dots {
+    position: absolute;
+    left: -50px;
+    top: -20px;
+}
+
+.lottie-dots1 {
+    position: absolute;
+    right: -25px;
+    bottom: -100px;
+}
+
+.profile-rossi {
+    width: 75px;
+    margin: 25px 0;
+}
+
+
+
+
+/**contact me ********************/
+
+#contact-me {
+    background-color: var(--backgroundCoralLight);
+    padding: 0 5vw 50px;
+}
+
+.contact-me-wrapper {
+    background-color: var(--backgroundBlueGreen);
+    padding: 50px 10%;
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.contact-me-wrapper h4 {
+    margin: 50px 0;
+}
+
+.contact-info {
+    margin: 50px 0 0 15px;
+    text-align: left;
+}
+
+.contact-info .email-me:before,
+.contact-info .call-me:before,
+.contact-info .location:before,
+.contact-info .github-contact:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.contact-info .email-me:before {
+    background: url("/images/email.png") no-repeat;
+}
+
+.contact-info .call-me:before {
+    background: url("/images/phone.png") no-repeat;
+}
+
+.contact-info .location:before {
+    background: url("/images/location.png") no-repeat;
+}
+
+.contact-info .github-contact:before {
+    background: url("/images/github.png") no-repeat;
+}
+
+/* ***************************** */
+
+.keep-in-touch {
+    background-color: var(--middleBlueGreen);
+    padding: 1.5em 0;
+}
+
+.keep-in-touch h6 {
+    margin: 0 0 25px 0;
+}
+
+.keep-in-touch .social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+
+.keep-in-touch .social-icons li img {
+    max-width: none;
+    margin: 0 10px;
+}
+
+.copywright {
+    background-color: var(--darkSalmon);
+    padding: 1em 0
+}
+
+.copywright p {
+    font-size: 0.625em;
+    font-weight: 600;
+}
+
+/********** media screen ****************/
+
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    .hiIamRossi {
+        margin: 15% 0 50px;
+    }
+
+    .what-i-do-containers-wrapper {
+        flex-direction: row;
+        padding: 0 5vw;
+    }
+
+    #recent-work {
+        padding: 0;
+    }
+
+    .recent-work-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .recent-work-containers-wrapper {
+        display: flex;
+    }
+
+    .recent-work-img-container-one,
+    .recent-work-img-container-two {
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: center;
+        width: 50%;
+
+    }
+
+    .recent-work-img-container-one {
+
+        margin: 0 0 0 20%;
+
+    }
+
+    .recent-work-img-container-two {
+        margin: 0 20% 0 0;
+
+    }
+
+
+    .recent-work-text-container-one,
+    .recent-work-text-container-two {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        box-shadow: none;
+        background-color: transparent;
+        width: 50%;
+    }
+
+
+    .recent-work-text-container-two {
+        order: 1;
+    }
+
+    .recent-work-get-in-touch {
+        margin: 0 auto;
+        float: none;
+        width: 150px;
+    }
+
+    .recent-work-learn-more .arrow-left {
+        width: 20px;
+        height: 20px;
+        float: left;
+        padding-right: 5px;
+        transform: rotateY(0)
+    }
+
+
+    .box {
+        background-image: url(../images/recent-work-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 105px 0;
+        margin: 0 auto;
+    }
+
+}
+
+/* ****************************/
