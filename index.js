@@ -111,30 +111,31 @@ masks.forEach((mask, index, el) => {
 function functionShowTextWeb() {
   const showText = document.getElementById('showTextWeb');
 
-  if (showText.style.display === 'none') {
-    showText.style.display = 'inline';
-  } else {
+  if (showText.style.display === 'inline' ||
+    showTextGraph.style.display === 'inline') {
     showText.style.display = 'none';
+  } else {
+    showText.style.display = 'inline';
   }
 }
 
 function functionShowTextGraph() {
   const showText = document.getElementById('showTextGraph');
 
-  if (showText.style.display === 'none') {
-    showText.style.display = 'inline';
-  } else {
+  if (showText.style.display === 'inline') {
     showText.style.display = 'none';
+  } else {
+    showText.style.display = 'inline';
   }
 }
 
 function functionShowTextAnim() {
   const showText = document.getElementById('showTextAnim');
 
-  if (showText.style.display === 'none') {
-    showText.style.display = 'inline';
-  } else {
+  if (showText.style.display === 'inline') {
     showText.style.display = 'none';
+  } else {
+    showText.style.display = 'inline';
   }
 }
 
