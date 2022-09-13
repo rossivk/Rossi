@@ -641,7 +641,7 @@ button:hover {
 }
 
 .contact-info {
-    margin: 50px 0 0 15px;
+    margin: 50px auto 0;
 }
 
 .contact-info .email-me:before,
@@ -657,19 +657,19 @@ button:hover {
 }
 
 .contact-info .email-me:before {
-    background: url("/images/email.png") no-repeat;
+    background: url("../images/email.png") no-repeat;
 }
 
 .contact-info .call-me:before {
-    background: url("/images/phone.png") no-repeat;
+    background: url("../images/phone.png") no-repeat;
 }
 
 .contact-info .location:before {
-    background: url("/images/location.png") no-repeat;
+    background: url("../images/location.png") no-repeat;
 }
 
 .contact-info .github-contact:before {
-    background: url("/images/github.png") no-repeat;
+    background: url("../images/github.png") no-repeat;
 }
 
 /* ***************************** */
