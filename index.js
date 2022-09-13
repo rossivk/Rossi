@@ -1,9 +1,3 @@
-// window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// }
-
-///////////////////////////////////////////////
-
 // Nav timeline
 
 const backgroundMenu = document.getElementsByClassName("nav-container");
@@ -103,10 +97,7 @@ masks.forEach((mask, index, el) => {
 });
 
 
-/////////////////////////////
-
 /////////////////////////////////////////////////////////////////////////////
-
 
 function functionShowTextWeb() {
   const showText = document.getElementById('showTextWeb');
