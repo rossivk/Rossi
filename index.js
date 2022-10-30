@@ -120,13 +120,28 @@ function functionShowTextGraph() {
   }
 }
 
-function functionShowTextAnim() {
-  const showText = document.getElementById('showTextAnim');
+// function functionShowTextAnim() {
+//   const showText = document.getElementById('showTextAnim');
 
-  if (showText.style.display === 'inline') {
-    showText.style.display = 'none';
+//   if (showText.style.display === 'inline') {
+//     showText.style.display = 'none';
+//   } else {
+//     showText.style.display = 'inline';
+//   }
+// }
+
+const showText = document.getElementById('showTextAnim');
+
+
+function functionShowText(x) {
+  // const showText = document.getElementById('showTextAnim');
+
+  if (x.style.display === 'inline') {
+    x.style.display = 'none';
   } else {
-    showText.style.display = 'inline';
+    x.style.display = 'inline';
   }
 }
+
+
 
