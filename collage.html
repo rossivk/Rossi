@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RVK-Digital Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Red+Hat+Display:ital,wght@0,400;0,600;0,800;0,900;1,600;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+    <script src="https://cdnjs.com/libraries/lottie-web" type="text/javascript"></script> -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <main class="wrapper">
+        <section id="top" class="top-section">
+            <div class="top-section-wrapper">
+                <header class="navbar">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo-E49678.svg" alt="logo-design"></a>
+                    </div>
+                    <div class="nav-menu">
+                        <div class="nav-container">
+                            <div class="nav-link-wrapper">
+                                <li class="nav-item"><a href="index.html">HOME</a></li>
+                                <li class="nav-item"><a href="#about-me">ABOUT me</a></li>
+                                <li class="nav-item"><a href="#recent-work">my WORK</a></li>
+                                <li class="nav-item"><a href="#contact-me">CONTACT me</a></li>
+                                <li class="nav-item"><a href="#resume">RESUME</a></li>
+                            </div>
+                        </div>
+                        <svg viewBox="0 0 14 12" class="hamburger-icon" height="100px" width="120px">
+                            <path d="M13,2 L1,2" class="upper"
+                                style="fill: none; stroke: #082629; stroke-linecap: round; stroke-width: 1.5" />
+                            <path d="M1,5 L13,5" class="middle"
+                                style="fill: none; stroke: #125B62; stroke-linecap: round; stroke-width: 1.5" />
+                            <path d="M13,8 L1,8" class="middle1"
+                                style="fill: none; stroke: #81C6BF; stroke-linecap: round; stroke-width: 1.5" />
+                            <path d="M1,11 L13,11" class="lower"
+                                style="fill: none; stroke: #E49678; stroke-linecap: round; stroke-width: 1.5" />
+                        </svg>
+                    </div>
+
+                </header>
+                <tittle>
+                    <div>
+                        <h1>Collage</h1>
+                        <h2>Acorn Project, Peterhead Bay</h2>
+                        <h3>Case Study</h3>
+                    </div>
+                </tittle>
+                <div class="social-icons">
+                    <li class="github"><a href="#"><img src="images/github-brands.svg" height="24" alt="github"></a>
+                    </li>
+                    <li class="twitter"><a href="#"><img src="images/twitter-brands.svg" height="24" alt="twitter"></a>
+                    </li>
+                    <li class="linkedin"><a href="#"><img src="images/linkedin-in-brands.svg" height="24"
+                                alt="linkedin"></a></li>
+                </div>
+                <div class="top-section-down">
+                    <a href="#what-i-do">
+                        <lottie-player id="arrowDown" src="animation/arrow-down.json" background="transparent" speed="1"
+                            style="width: 20px; height: 20px;" autoplay loop></lottie-player>
+                        </lottie-player>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="what-i-do">
+            <div class="what-i-do-wrapper">
+                <h2>What I <span class="color">Do</span></h2>
+                <div class="what-i-do-containers-wrapper">
+                    <div class="web-design-container">
+                        <lottie-player class="lottie web" src="animation/web.json" background="transparent" speed="1"
+                            hover>
+                        </lottie-player>
+                        <h3>Web design</h3>
+                        <p><span id="showTextWeb">I build creative and functional websites,
+                                designed to engage your audience and ensuring a good
+                                user experience.
+                                I look to deliver an online presence
+                                that will enhance your brand and reputation.</span></p>
+                        <button onclick="functionShowTextWeb()" id="btnShowTextWeb">
+                            <lottie-player id="arrowDown" src="animation/arrow-down.json" background="transparent"
+                                speed="1" style="width: 20px; height: 20px;" autoplay loop></lottie-player>
+                            </lottie-player>
+                        </button>
+                    </div>
+
+                    <div class="graph-design-container">
+                        <lottie-player class="lottie graph" src="animation/graphics.json" background="transparent"
+                            speed="1" hover>
+                        </lottie-player>
+                        <h3>Graphics</h3>
+                        <p><span id="showTextGraph">All ideas are interesting with a great visual presentation. Creating
+                                visual concepts, develop an overall layout and production design for applications such
+                                as
+                                advertisements, brochures, magazines, and reports.</span></p>
+                        <button onclick="functionShowTextGraph()" id="btnShowTextGraph">
+                            <lottie-player id="arrowDown" src="animation/arrow-down.json" background="transparent"
+                                speed="1" style="width: 20px; height: 20px;" autoplay loop></lottie-player>
+                            </lottie-player>
+                        </button>
+                    </div>
+
+                    <div class="anim-design-container">
+                        <lottie-player class="lottie anim" src="animation/animations.json" background="transparent"
+                            speed="1" hover>
+                        </lottie-player>
+                        <h3>Animations</h3>
+                        <p><span id="showTextAnim">Creating a video or animation to explain and bring a subject alive.
+                                Whether shooting new material or using your existing assets, I will create effective and
+                                inspiring videos that will engage your audience and achieve results.</span></p>
+                        <button onclick="functionShowTextAnim()" id="btnShowTextAnim">
+                            <lottie-player id="arrowDown" src="animation/arrow-down.json" background="transparent"
+                                speed="1" style="width: 20px; height: 20px;" autoplay loop>
+                            </lottie-player>
+                        </button>
+                    </div>
+                </div>
+                <button class="what-i-do-get-in-touch" type="button" name="button"><a href="#contact-me">Get In
+                        Touch</a></button>
+            </div>
+        </section>
+
+        <section id="recent-work">
+            <div class="box">
+                <h2>Recent <span class="color">Work.</span></h2>
+
+                <div class="recent-work-wrapper">
+
+                    <div class="recent-work-containers-wrapper">
+                        <div class="recent-work-text-container-one">
+                            <h3>Weightlifting
+                                Coach</h3>
+                            <h4>Laura Podstawka</h4>
+                            <p>case study</p>
+                            <button class="recent-work-learn-more">learn more
+                                <lottie-player class="arrowRight" src="animation/arrow-right.json"
+                                    background="transparent" speed="1"
+                                    style="width: 20px; height: 20px; float: right; padding-left:5px;" autoplay loop>
+                                </lottie-player>
+
+                            </button>
+                        </div>
+                        <div class="recent-work-img-container-one">
+                            <a href="https://wildheart.se/" target=”_blank”>
+                                <img class="recent-work-image-one" src="images/prototype-phone-E49678.png"
+                                    alt="professional boxer.jpg"></a>
+
+                        </div>
+                    </div>
+                    <div class="recent-work-containers-wrapper">
+                        <div class="recent-work-text-container-two">
+                            <h3>Project Management</h3>
+                            <h4>services</h4>
+                            <p>case study</p>
+                            <button class="recent-work-learn-more">learn more<lottie-player class="arrow-left"
+                                    src="animation/arrow-left.json" background="transparent" speed="1" autoplay loop>
+                                </lottie-player>
+                            </button>
+                        </div>
+                        <div class="recent-work-img-container-two">
+
+                            <a href="https://rossivk.github.io/LauraPodstawka/" target=”_blank”>
+                                <img class="recent-work-image-two" src="images/prototype-phone-125B62.png"
+                                    alt="weightlifting coach.jpg"></a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <button class="recent-work-check-mywork" type="button" name="button">Check My Work</button>
+
+            </div>
+
+        </section>
+
+
+        <section id="about-me">
+
+            <div class="about-me-wrapper">
+
+                <div class="about-me-info">
+                    <div class="about-me-info-text">
+                        <lottie-player class="lottie-dots"
+                            src="https://assets1.lottiefiles.com/private_files/lf30_o3yyrs1c.json" mode="bounce"
+                            background="transparent" speed="1" style="width: 150px; height: 300px; " loop autoplay>
+                        </lottie-player>
+                        <h2>About <span class="color">Me.</span></h2>
+                        <img class="profile-rossi" src="../Rossi/images/rossi.png" alt="profile pic designer" />
+                        <p>Hi, I am Rossi<br /> &#60Rosica Kirkova&#62.
+                            <br /><br />
+                            A creative and client focussed designer who specialises
+                            in Web Design and Web Development.
+                            <br /><br />
+                        <h3>Why <span class="color">Me?</span></h3>
+                        <br /><br />
+                        <p>I am experienced in using Figma for Interface Design and Prototyping,
+                            as well as Elementor and WordPress for website building.
+                            <br /> <br />
+                            In the last few years, I have developed a variety
+                            of skills including
+                            developing websites using HTML, CSS and
+                            Javascript.
+                        </p>
+                        <lottie-player class="lottie-dots1"
+                            src="https://assets1.lottiefiles.com/private_files/lf30_o3yyrs1c.json" mode="bounce"
+                            background="transparent" speed="1" style="width: 150px; height: 300px; " loop autoplay>
+                        </lottie-player>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="contact-me">
+            <div class="contact-me-wrapper">
+                <h2>Contact <span class="color">Me.</span></h2>
+                <h4>Let's talk<br /> what is best
+                    for your project.</h4>
+                <div class="contact-info">
+                    <div>
+                        <a class="email-me" href="mailto:rkirkova@hotmail.co.uk">
+                            <p>rkirkova@hotmail.co.uk</p>
+                        </a>
+                        <p class="call-me">+44 771 774 4166</p>
+                        <p class="location">Romford, UK</p>
+                        <a class="github-contact" href="https://github.com/rossivk" target=”_blank”>
+                            <p>GitHub Rossi</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="keep-in-touch">
+            <h6>Keep In Touch</h6>
+            <div class="social-icons">
+                <li class="github"><a href="#"><img src="images/github-brands-125B62.svg" height="24" alt="github"></a>
+                </li>
+                <li class="twitter"><a href="#"><img src="images/twitter-brands-125B62.svg" height="24"
+                            alt="twitter"></a>
+                </li>
+                <li class="linkedin"><a href="#"><img src="images/linkedin-in-brands-125B62.svg" height="24"
+                            alt="linkedin"></a></li>
+            </div>
+        </div>
+        <div class="copywright">
+            <p>&copy;Rosica Kirkova @Frallen Ltd.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+
+
+</body>
+
+</html>

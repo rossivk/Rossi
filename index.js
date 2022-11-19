@@ -131,7 +131,7 @@ function functionShowTextGraph() {
 // }
 
 const showText = document.getElementById('showTextAnim');
-
+functionShowText(showText);
 
 function functionShowText(x) {
   // const showText = document.getElementById('showTextAnim');
