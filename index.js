@@ -59,7 +59,7 @@ const boxes = document.querySelectorAll(".top-section-box-left, .top-section-box
 
 gsap.timeline()
   .from("#top", { duration: 0.5, opacity: 0 })
-  .from(".top-section h1", { opacity: 0, scale: 0, duration: 2, delay: 0.4, ease: "circ.out" })
+  .from(".top-section .h1", { opacity: 0, scale: 0, duration: 2, delay: 0.4, ease: "circ.out" })
   .from(".top-section-down", { opacity: 0, ease: "back" }, "-=0.2")
   .from(boxes, { opacity: 0, ease: "back" }, "-=0.2")
   .from(socialIcons, { opacity: 0, duration: 2, stagger: 0.125, x: 300, ease: "back" }, "-=0.2")
@@ -120,28 +120,16 @@ function functionShowTextGraph() {
   }
 }
 
-// function functionShowTextAnim() {
-//   const showText = document.getElementById('showTextAnim');
+function functionShowTextAnim() {
+  const showText = document.getElementById('showTextAnim');
 
-//   if (showText.style.display === 'inline') {
-//     showText.style.display = 'none';
-//   } else {
-//     showText.style.display = 'inline';
-//   }
-// }
-
-const showText = document.getElementById('showTextAnim');
-functionShowText(showText);
-
-function functionShowText(x) {
-  // const showText = document.getElementById('showTextAnim');
-
-  if (x.style.display === 'inline') {
-    x.style.display = 'none';
+  if (showText.style.display === 'inline') {
+    showText.style.display = 'none';
   } else {
-    x.style.display = 'inline';
+    showText.style.display = 'inline';
   }
 }
+
 
 
 
