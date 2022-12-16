@@ -196,7 +196,7 @@ button:hover {
     width: 20vw;
     min-width: 150px;
     max-width: 250px;
-    margin: 20% 0 50px;
+    margin: 100px 0 50px;
 }
 
 .hiIamRossi .mask {
@@ -713,7 +713,7 @@ button:hover {
     }
 
     .hiIamRossi {
-        margin: 15% 0 50px;
+        margin: 100px 0 50px;
     }
 
     .what-i-do-containers-wrapper {
