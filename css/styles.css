@@ -118,6 +118,10 @@ button:hover {
     color: #E49678;
 }
 
+.background {
+    background-color: var(--darkJungleGreen);
+}
+
 .background-logo {
     background-image: url(../images/logo-E49678.png);
     background-repeat: no-repeat;
@@ -514,7 +518,8 @@ button:hover {
 
 .recent-work-image-one,
 .recent-work-image-two {
-    width: 100px;
+    width: 90%;
+    filter: grayscale(90%);
 }
 
 
@@ -723,15 +728,16 @@ button:hover {
 
     #recent-work {
         padding: 0;
-    }
-
-    .recent-work-wrapper {
-        position: relative;
-        display: flex;
-        justify-content: space-evenly;
         max-width: 1440px;
         margin: 0 auto;
     }
+
+    /* .recent-work-wrapper {
+        position: relative;
+       
+        max-width: 1440px;
+        margin: 0 auto;
+    } */
 
     .recent-work-containers-wrapper {
         display: flex;
@@ -748,13 +754,12 @@ button:hover {
     }
 
     .recent-work-img-container-one {
-
-        margin: 0 0 0 20%;
+        /* margin: 0 0 0 20%; */
 
     }
 
     .recent-work-img-container-two {
-        margin: 0 20% 0 0;
+        /* margin: 0 20% 0 0; */
 
     }
 
@@ -770,9 +775,7 @@ button:hover {
     }
 
 
-    .recent-work-text-container-two {
-        order: 1;
-    }
+
 
     .recent-work-get-in-touch {
         margin: 0 auto;
@@ -790,17 +793,11 @@ button:hover {
 
 
     .box {
-        background-image: url(../images/recent-work-background.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100vw;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: 105px 0;
-        margin: 0 auto;
+        padding: 50px;
+        background-color: var(--middleBlueGreen);
+        margin: 0 10vw;
+
+
     }
 
 }
