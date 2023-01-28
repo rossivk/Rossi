@@ -6,9 +6,9 @@
     --azureXwebColor: #D9E9E9;
     --backgroundCoralLight: #F4F0EE;
     --backgroundBlueGreen: #D9E9E7;
-    --visitedLinks: #c04d1f;
+    --visitedLinks: #E49678;
     --activeLink: #004349;
-
+    --darkSalmonTransparent: #e4977817;
 }
 
 html {
@@ -298,6 +298,8 @@ button:hover {
     max-height: 900px;
 }
 
+
+
 .top-section-wrapper {
     position: relative;
     display: flex;
@@ -307,8 +309,17 @@ button:hover {
     max-width: 1440px;
     min-width: 180px;
     margin: 7.5vh auto;
+}
 
-
+.top-section-wrapper-work {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(129, 198, 191, 0.25);
+    /* height: 85%; */
+    max-width: 1440px;
+    min-width: 180px;
+    margin: 7.5vh auto;
 }
 
 .top-section tittle {
@@ -477,24 +488,23 @@ button:hover {
 
 #recent-work {
     padding: 5px 0;
+    background-color: var(--darkSalmonTransparent);
+}
+
+.recent-work-wrapper {
+    padding: 100px 0;
+    margin: 0 5vw;
 }
 
 .recent-work-containers-wrapper {
     position: relative;
-    margin: 100px 0;
+    margin: 50px 0;
 }
 
-
-
-.recent-work-text-container-one {
-    background-color: #FFC7B1;
-
+.recent-work-img {
+    margin: 25px 50px 50px;
 }
 
-.recent-work-text-container-two {
-    background-color: #81C6BF;
-
-}
 
 .recent-work-text-container-one,
 .recent-work-text-container-two {
@@ -518,10 +528,17 @@ button:hover {
 
 .recent-work-image-one,
 .recent-work-image-two {
-    width: 90%;
+    max-width: 75%;
     filter: grayscale(90%);
+    transition: transform .75s;
 }
 
+.recent-work-image-one:hover,
+.recent-work-image-two:hover {
+    filter: none;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--darkJungleGreen);
+}
 
 .recent-work-get-in-touch {
     margin: 50px 0 0 10vw;
@@ -539,7 +556,7 @@ button:hover {
 }
 
 .recent-work-check-mywork {
-    background: var(--azureXwebColor);
+    background: var(--middleBlueGreen);
 }
 
 .recent-work-learn-more .arrow-left {
@@ -709,12 +726,70 @@ button:hover {
     font-weight: 600;
 }
 
+
+/*********** work ******************/
+
+.work {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.work-cover {
+    margin: 25px 50px 100px;
+}
+
+.work-cover-text {
+    margin: 25px 50px;
+}
+
+.top-section-work {
+    position: relative;
+    opacity: 1;
+    margin: 0 10vw;
+    /* height: 100vh; */
+    max-height: 900px;
+}
+
+.top-section-work {
+    position: relative;
+    opacity: 1;
+    margin: 0 10vw;
+    /* height: 100vh; */
+    max-height: 900px;
+}
+
+.top-section-work .social-icons {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+}
+
+.top-section-work .social-icons li img {
+    max-width: none;
+    margin-left: 25px;
+}
+
+.work-image {
+    max-width: 75%;
+    filter: grayscale(90%);
+    transition: transform .75s;
+}
+
+.work-image:hover {
+    filter: none;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--darkJungleGreen);
+}
+
+
 /********** media screen ****************/
 
 
 @media screen and (min-width: 800px) {
     h1 {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .hiIamRossi {
@@ -730,14 +805,9 @@ button:hover {
         padding: 0;
         max-width: 1440px;
         margin: 0 auto;
+
     }
 
-    /* .recent-work-wrapper {
-        position: relative;
-       
-        max-width: 1440px;
-        margin: 0 auto;
-    } */
 
     .recent-work-containers-wrapper {
         display: flex;
@@ -750,16 +820,6 @@ button:hover {
         right: 0;
         text-align: center;
         width: 50%;
-
-    }
-
-    .recent-work-img-container-one {
-        /* margin: 0 0 0 20%; */
-
-    }
-
-    .recent-work-img-container-two {
-        /* margin: 0 20% 0 0; */
 
     }
 
@@ -793,11 +853,22 @@ button:hover {
 
 
     .box {
-        padding: 50px;
+        padding: 100px;
         background-color: var(--middleBlueGreen);
-        margin: 0 10vw;
+        /* margin: 0 10vw; */
+        /* max-width: 1440px; */
 
 
+    }
+
+    .work {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .work-cover-container {
+        max-width: 400px;
     }
 
 }
