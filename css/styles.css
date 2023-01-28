@@ -502,7 +502,7 @@ button:hover {
 }
 
 .recent-work-img {
-    margin: 25px 50px 50px;
+    margin: 25px 0 50px;
 }
 
 
@@ -528,7 +528,7 @@ button:hover {
 
 .recent-work-image-one,
 .recent-work-image-two {
-    max-width: 75%;
+    max-width: 100%;
     filter: grayscale(90%);
     transition: transform .75s;
 }
@@ -736,7 +736,7 @@ button:hover {
 }
 
 .work-cover {
-    margin: 25px 50px 100px;
+    margin: 25px 0 100px;
 }
 
 .work-cover-text {
@@ -772,7 +772,7 @@ button:hover {
 }
 
 .work-image {
-    max-width: 75%;
+    max-width: 100%;
     filter: grayscale(90%);
     transition: transform .75s;
 }
@@ -808,12 +808,11 @@ button:hover {
 
     }
 
-
     .recent-work-containers-wrapper {
         display: flex;
     }
 
-    .recent-work-img-container-one,
+    /* .recent-work-img-container-one,
     .recent-work-img-container-two {
         position: relative;
         top: 0;
@@ -821,9 +820,9 @@ button:hover {
         text-align: center;
         width: 50%;
 
-    }
+    } */
 
-
+    /* 
     .recent-work-text-container-one,
     .recent-work-text-container-two {
         padding: 0;
@@ -832,9 +831,11 @@ button:hover {
         box-shadow: none;
         background-color: transparent;
         width: 50%;
+    } */
+
+    .recent-work-img {
+        margin: 25px 25px 50px;
     }
-
-
 
 
     .recent-work-get-in-touch {
@@ -870,6 +871,11 @@ button:hover {
     .work-cover-container {
         max-width: 400px;
     }
+
+    .work-cover {
+        margin: 25px 25px 100px;
+    }
+
 
 }
 
