@@ -294,8 +294,8 @@ button:hover {
     position: relative;
     opacity: 1;
     margin: 0 10vw;
-    height: 100vh;
-    max-height: 900px;
+    /* height: 100vh;
+    max-height: 900px; */
 }
 
 
