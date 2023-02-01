@@ -97,39 +97,34 @@ masks.forEach((mask, index, el) => {
 });
 
 
-/////////////////////////////////////////////////////////////////////////////
+///////// what I do section shows the text behind the animated icons //////////
 
-function functionShowTextWeb() {
-  const showText = document.getElementById('showTextWeb');
-
-  if (showText.style.display === 'inline' ||
-    showTextGraph.style.display === 'inline') {
-    showText.style.display = 'none';
-  } else {
-    showText.style.display = 'inline';
-  }
-}
-
-function functionShowTextGraph() {
-  const showText = document.getElementById('showTextGraph');
-
-  if (showText.style.display === 'inline') {
-    showText.style.display = 'none';
-  } else {
-    showText.style.display = 'inline';
-  }
-}
-
-function functionShowTextAnim() {
-  const showText = document.getElementById('showTextAnim');
-
-  if (showText.style.display === 'inline') {
-    showText.style.display = 'none';
-  } else {
-    showText.style.display = 'inline';
-  }
+let buttons = document.getElementsByClassName('click-me-to-show-text');
+for (let i = 0; i < buttons.length; i++) {
+  let text = document.getElementsByClassName('show-text');
+  buttons[i].addEventListener('click', () => {
+    if (text[i].style.display === 'inline') {
+      text[i].style.display = 'none';
+    } else {
+      text[i].style.display = 'inline';
+    }
+  });
 }
 
 
+
+////////////  typewriter text for animated icon coming soon
+// let letterIndex = 0;
+// let textToType = 'Next icon. Coming soon';
+// let speed = 25;
+
+// function typeWriter() {
+
+//   if (letterIndex < textToType.length) {
+//     document.getElementById("typingText").innerHTML += textToType.charAt(letterIndex);
+//     letterIndex++;
+//     setTimeout(typeWriter, speed);
+//   }
+// }
 
 

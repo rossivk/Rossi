@@ -9,6 +9,7 @@
     --visitedLinks: #E49678;
     --activeLink: #004349;
     --darkSalmonTransparent: #e4977817;
+    --darkJungleGreenTransparent: #0826297c;
 }
 
 html {
@@ -97,9 +98,9 @@ h6 {
 button {
     border: none;
     background: transparent;
-    border-radius: 10px;
-    padding: 10px 20px;
-    transition: 0.5s ease-in-out;
+    border-radius: 3px;
+    padding: 12px 20px;
+    transition: 0.3s ease-in-out;
     font-family: 'Red Hat Text', sans-serif;
     font-weight: 600;
     font-size: 0.875em;
@@ -108,7 +109,7 @@ button {
 button:hover {
     cursor: pointer;
     transform: scale(1.1);
-    border: 1px solid var(--midnightGreen);
+    border: 1px solid var(--darkJungleGreen);
     background-color: transparent;
     scale: 1.2em;
 
@@ -158,7 +159,7 @@ button:hover {
     right: 0px;
     top: 0px;
     background-color: var(--middleBlueGreen);
-    height: 75vh;
+    padding-bottom: 50px;
     width: 100%;
     z-index: 1;
 }
@@ -472,9 +473,7 @@ button:hover {
     margin: 50px auto 25px;
 }
 
-#showTextWeb,
-#showTextGraph,
-#showTextAnim {
+.show-text {
     display: none;
 }
 
@@ -655,7 +654,7 @@ button:hover {
     padding: 50px 10%;
     max-width: 350px;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .contact-me-wrapper h4 {
@@ -729,14 +728,21 @@ button:hover {
 
 /*********** work ******************/
 
-.work {
-    max-width: 1440px;
+.page-title {
+    margin: 100px 0 50px;
+}
+
+#work {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 50px;
+}
+
+.work {
+    padding: 25px;
 }
 
 .work-cover {
-    margin: 25px 0 100px;
+    margin: 25px 0 50px;
 }
 
 .work-cover-text {
@@ -783,6 +789,41 @@ button:hover {
     box-shadow: 0 0 15px var(--darkJungleGreen);
 }
 
+/************ animated icons *************/
+
+.animated-icons {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 50px 25px;
+    gap: 100px;
+
+}
+
+.lottie-anim {
+    height: 200px;
+    width: auto;
+    padding: 25px;
+}
+
+.icon {
+    /* padding: 25px; */
+    /* box-shadow: 0.5px 0.5px 1px var(--darkJungleGreen); */
+    border-radius: 3px;
+    border-right: solid 0.1px var(--darkJungleGreenTransparent);
+    border-bottom: solid 0.1px var(--darkJungleGreenTransparent);
+}
+
+
+.text-desktop {
+    display: none;
+}
+
+.text-mobile {
+    display: inline-block;
+}
+
 
 /********** media screen ****************/
 
@@ -794,6 +835,10 @@ button:hover {
 
     .hiIamRossi {
         margin: 100px 0 50px;
+    }
+
+    #what-i-do {
+        margin-bottom: 100px;
     }
 
     .what-i-do-containers-wrapper {
@@ -834,7 +879,7 @@ button:hover {
     } */
 
     .recent-work-img {
-        margin: 25px 25px 50px;
+        margin: 25px 50px 50px;
     }
 
 
@@ -862,10 +907,16 @@ button:hover {
 
     }
 
+    #work {
+        margin-bottom: 100px;
+    }
+
     .work {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        gap: 50px;
+
     }
 
     .work-cover-container {
@@ -873,8 +924,26 @@ button:hover {
     }
 
     .work-cover {
-        margin: 25px 25px 100px;
+        margin: 25px;
     }
+
+    .animated-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 100px 0;
+        gap: 150px;
+
+    }
+
+    .text-desktop {
+        display: block;
+    }
+
+    .text-mobile {
+        display: none;
+    }
+
 
 
 }
