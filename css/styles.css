@@ -69,7 +69,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-family: 'Red Hat Text', sans-serif;
     font-weight: 800;
 }
@@ -102,8 +102,8 @@ button {
     padding: 12px 20px;
     transition: 0.3s ease-in-out;
     font-family: 'Red Hat Text', sans-serif;
-    font-weight: 600;
-    font-size: 0.875em;
+    font-weight: 800;
+    font-size: 1em;
 }
 
 button:hover {
@@ -487,12 +487,13 @@ button:hover {
 
 #recent-work {
     padding: 5px 0;
-    background-color: var(--darkSalmonTransparent);
 }
 
 .recent-work-wrapper {
     padding: 100px 0;
     margin: 0 5vw;
+    background-color: #f2e7e2;
+
 }
 
 .recent-work-containers-wrapper {
@@ -556,6 +557,10 @@ button:hover {
 
 .recent-work-check-mywork {
     background: var(--middleBlueGreen);
+}
+
+.recent-work-check-mywork a:hover {
+    color: var(--darkJungleGreen);
 }
 
 .recent-work-learn-more .arrow-left {
@@ -848,38 +853,23 @@ button:hover {
 
     #recent-work {
         padding: 0;
+        margin: 0 10vw;
+
+    }
+
+    .recent-work-wrapper {
         max-width: 1440px;
         margin: 0 auto;
-
     }
 
     .recent-work-containers-wrapper {
         display: flex;
+
     }
 
-    /* .recent-work-img-container-one,
-    .recent-work-img-container-two {
-        position: relative;
-        top: 0;
-        right: 0;
-        text-align: center;
-        width: 50%;
-
-    } */
-
-    /* 
-    .recent-work-text-container-one,
-    .recent-work-text-container-two {
-        padding: 0;
-        margin: 0;
-        text-align: left;
-        box-shadow: none;
-        background-color: transparent;
-        width: 50%;
-    } */
 
     .recent-work-img {
-        margin: 25px 50px 50px;
+        margin: 50px 100px;
     }
 
 
