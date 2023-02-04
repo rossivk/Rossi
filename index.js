@@ -60,7 +60,7 @@ const boxes = document.querySelectorAll(".top-section-box-left, .top-section-box
 gsap.timeline()
   .from("#top", { duration: 0.5, opacity: 0 })
   .from(".top-section .h1", { opacity: 0, scale: 0, duration: 2, delay: 0.4, ease: "circ.out" })
-  .from(socialIcons, { opacity: 0, duration: 2, stagger: 0.125, x: 300, ease: "back" })
+  .from(socialIcons, { opacity: 0, duration: 2, stagger: 0.125, x: 300, ease: "back", })
   .from(".top-section-down", { opacity: 0, ease: "back" }, "-=0.2")
   .from(boxes, { opacity: 0, ease: "back" }, "-=0.2")
 
