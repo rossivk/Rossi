@@ -1101,6 +1101,12 @@ button:hover {
     padding: 1px 0;
 }
 
+.resume-nav-item.download-resume {
+    font-size: 12px;
+    margin-top: 100px;
+    background-color: var(--middleBlueGreen);
+
+}
 
 #myBtn {
     display: none;
