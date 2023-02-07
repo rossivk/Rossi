@@ -64,6 +64,33 @@ gsap.timeline()
   .from(".top-section-down", { opacity: 0, ease: "back" }, "-=0.2")
   .from(boxes, { opacity: 0, ease: "back" }, "-=0.2")
 
+////////////////////////////////////////
+
+
+///////// funtion shows hidden text //////////
+
+let buttons = document.getElementsByClassName('click-me-to-show-text');
+let text = document.getElementsByClassName('show-text');
+
+showText(buttons, text);
+
+let buttonsExperience = document.getElementsByClassName('click-me-to-show-experience');
+let text1 = document.getElementsByClassName('resume-info-experience-collapse');
+
+showText(buttonsExperience, text1);
+
+function showText(array, text) {
+  for (let i = 0; i < array.length; i++) {
+    array[i].addEventListener('click', () => {
+      if (text[i].style.display === 'inline') {
+        text[i].style.display = 'none';
+      } else {
+        text[i].style.display = 'inline';
+      }
+    });
+  }
+}
+
 
 // ////////////////////////////////////
 
@@ -97,19 +124,6 @@ masks.forEach((mask, index, el) => {
 });
 
 
-///////// what I do section shows the text behind the animated icons //////////
-
-let buttons = document.getElementsByClassName('click-me-to-show-text');
-for (let i = 0; i < buttons.length; i++) {
-  let text = document.getElementsByClassName('show-text');
-  buttons[i].addEventListener('click', () => {
-    if (text[i].style.display === 'inline') {
-      text[i].style.display = 'none';
-    } else {
-      text[i].style.display = 'inline';
-    }
-  });
-}
 
 
 

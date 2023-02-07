@@ -73,6 +73,7 @@ h3 {
     font-size: 1.25em;
     font-family: 'Red Hat Text', sans-serif;
     font-weight: 800;
+    opacity: 0.8;
 }
 
 h4 {
@@ -97,11 +98,11 @@ h6 {
 }
 
 button {
-    border: none;
+    border: 1px solid var(--middleBlueGreen);
     background: transparent;
     border-radius: 3px;
     padding: 12px 20px;
-    transition: 0.3s ease-in-out;
+    /* transition: 0.3s ease-in-out; */
     font-family: 'Red Hat Text', sans-serif;
     font-weight: 800;
     font-size: 1em;
@@ -109,10 +110,10 @@ button {
 
 button:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    /* transform: scale(1.05); */
     border: 1px solid var(--darkJungleGreen);
     background-color: transparent;
-    scale: 1.2em;
+    /* scale: 1.2em; */
 
 }
 
@@ -943,69 +944,96 @@ button:hover {
 
 /* ****************************/
 
+.section-divider {
+    margin: 0;
+    border-top: 0.5px solid var(--darkSalmon);
+}
 
-
-#resume-about,
 #resume-menu-container {
+    text-align: left;
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 .resume-menu {
     background: var(--backgroundBlueGreen);
     height: 100vh;
-    width: 250px;
+    width: 200px;
     position: fixed;
     top: 0;
     padding-top: 125px;
 }
 
+#resume-about,
+#resume-experience,
+#resume-education,
+#resume-skills,
+#resume-work {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0 50px;
+    text-align: left;
+
+}
+
+
+
+
 .resume-info {
     background: var(--backgroundCoralLight);
     margin-left: 250px;
-    text-align: left;
 }
 
-.resume-name {
-    margin: 100px 0 0 25px;
+.resume-name,
+.resume-experience,
+.resume-education,
+.resume-skills,
+.resume-work {
+    margin: 0 0 50px 25px;
 }
 
 .resume-info-about-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-left: 25px;
+    /* margin: 50px 0; */
 }
-
-/* .break-flex-to-new-row {
-    flex-basis: 100%;
-    height: 0;
-} */
 
 .resume-info-about {
     flex-grow: 1;
     max-width: 200px;
     min-width: 200px;
-    /* border: solid 0.5px pink; */
-    margin: 15px 25px 15px 0;
+    margin: 15px 25px;
 }
 
-.resume-info-about-date {
+
+.resume-info-experience-container,
+.resume-info-education-container,
+.resume-info-skills-container,
+.resume-info-work-container {
+    margin: 15px 0 15px 25px;
+}
+
+.resume-info-about-data {
     background-color: var(--darkSalmon);
 }
 
+.resume-info-experience-company {
+    background-color: #e4977837;
+    padding: 5px 0;
+    margin: 50px 0 25px
+}
+
+
 .resume-info-about lottie-player.lottie.web {
-    height: 100px;
+    height: 75px;
+    width: 100px;
 }
 
-
-.resume-nav-container {
-    top: 150px;
-    left: 0;
-}
 
 .resume-nav-link-wrapper {
-    padding: 50px 0 0;
+    padding: 50px 0 0 50px;
 }
 
 .resume-nav-item {
@@ -1015,4 +1043,78 @@ button:hover {
 
 .resume-profile {
     height: 125px;
+    padding-left: 25px;
+}
+
+.resume-info-experience-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume-info-experience-collapse {
+    display: none;
+
+}
+
+.resume-info-experience-collapse-container {
+    max-width: 600px;
+    margin: 20px 0;
+
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.click-me-to-show-experience {
+    font-weight: 400;
+    color: var(--darkJungleGreen);
+    opacity: 0.8;
+}
+
+.resume-info-education,
+.resume-info-skills {
+    margin-bottom: 50px;
+}
+
+.resume-info-skills,
+.resume-info-work ul {
+    padding: 0;
+}
+
+.resume-info-skills-design-tools li {
+    padding: 15px 30px 15px 0;
+    display: inline-block;
+}
+
+.resume-info-skills-design-tools li img,
+.resume-info-skills-programming li img {
+    height: 50px;
+}
+
+.resume-info-skills-programming li {
+    padding: 15px 20px 15px 0;
+    display: inline-block;
+}
+
+.resume-info-skills-soft-skills li {
+    padding: 1px 0;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 10;
+    border: none;
+    outline: none;
+    background-color: var(--darkSalmon);
+    color: var(--backgroundCoralLight);
+    cursor: pointer;
+    padding: 10px 18px 14px;
+    border-radius: 50%;
+    font-size: 20px;
+    rotate: -90deg;
 }
