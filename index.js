@@ -1,6 +1,7 @@
 // Nav timeline
 
 const backgroundMenu = document.getElementsByClassName("nav-container");
+
 let tl1 = new TimelineLite({ paused: true, reversed: true });
 tl1.from(backgroundMenu, 0.5, { opacity: 0, x: 1500 });
 
@@ -92,6 +93,9 @@ function showText(array, text) {
 }
 
 
+
+
+
 // ////////////////////////////////////
 
 const masks = [
@@ -122,6 +126,15 @@ masks.forEach((mask, index, el) => {
   path.style.strokeDasharray = length;
   path.style.strokeDashoffset = length;
 });
+
+
+
+
+
+
+
+
+
 
 
 

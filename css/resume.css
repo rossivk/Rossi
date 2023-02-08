@@ -1,0 +1,300 @@
+ul {
+    padding: 0;
+}
+
+#resume-about,
+#resume-experience,
+#resume-education,
+#resume-skills,
+#resume-work {
+    padding: 50px 0 50px;
+
+}
+
+.resume-profile-img {
+    display: none;
+}
+
+.resume-profile-name {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--backgroundBlueGreen);
+    padding: 10px 0 0;
+}
+
+
+.resume-menu {
+    background: var(--backgroundBlueGreen);
+    /* height: 50px; */
+    /* width: 100vw; */
+    position: fixed;
+    top: 0;
+    padding-top: 50px;
+    text-align: left;
+    font-size: 12px;
+    z-index: 5;
+}
+
+.resume-menu-collapse {
+    padding: 5px 10px;
+    border: solid 1px var(--darkSalmon);
+    margin: 0;
+    cursor: pointer;
+
+}
+
+.resume-nav-link-wrapper {
+    display: none;
+}
+
+.resume-nav-link-wrapper {
+    padding-left: 10px;
+}
+
+.resume-nav-link-wrapper li {
+    padding: 2px 0;
+}
+
+
+.resume-sections-wrapper {
+    text-align: left;
+    margin: 50px 20px;
+}
+
+.resume-info-about-data {
+    background-color: var(--darkSalmon);
+}
+
+
+.resume-info-experience-company {
+    background-color: #e4977837;
+    padding: 5px 0;
+    margin-bottom: 25px;
+}
+
+.resume-info-about {
+    margin: 15px 0;
+}
+
+.resume-info-about lottie-player.lottie.web {
+    height: 100px;
+}
+
+.resume-info-about-current-projects,
+.resume-info-work-data {
+    border: solid 1px var(--middleBlueGreen);
+    padding: 5px 10px;
+}
+
+
+.resume-info-experience-collapse {
+    display: none;
+}
+
+.resume-info-experience-details p {
+    margin: 10px 0;
+}
+
+div.resume-info-experience-details :last-child {
+    margin: 10px 0;
+}
+
+.resume-name,
+.resume-experience,
+.resume-education,
+.resume-skills,
+.resume-work {
+    padding: 0px 0 25px 0;
+}
+
+.resume-info-skills ul,
+.resume-info-work ul {
+    padding: 0;
+}
+
+.resume-info-skills-design-tools li img,
+.resume-info-skills-programming li img {
+    height: 30px;
+}
+
+.resume-info-skills-design-tools li {
+    padding: 25px 10px 25px 0;
+    display: inline-block;
+}
+
+.resume-info-skills-programming li {
+    padding: 15px 10px 15px 0;
+    display: inline-block;
+}
+
+
+.resume-nav-item.download-resume {
+    font-size: 12px;
+    margin-top: 15px;
+    background-color: var(--middleBlueGreen);
+}
+
+/********** screen above 800px ****************/
+
+
+@media screen and (min-width: 800px) {
+
+    .section-divider {
+        margin: 0;
+        border-top: 0.5px solid var(--darkSalmon);
+    }
+
+    #resume-menu-container {
+        text-align: left;
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
+
+    .resume-menu {
+        background: var(--backgroundBlueGreen);
+        height: 100vh;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        padding-top: 125px;
+        z-index: 1;
+
+    }
+
+    .resume-sections-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #resume-about,
+    #resume-experience,
+    #resume-education,
+    #resume-skills,
+    #resume-work {
+
+        padding: 100px 0 50px;
+
+    }
+
+    .resume-info {
+        /* background: var(--backgroundCoralLight); */
+        margin-left: 250px;
+    }
+
+    .resume-name,
+    .resume-experience,
+    .resume-education,
+    .resume-skills,
+    .resume-work {
+        padding: 0px 0 50px 25px;
+    }
+
+    .resume-info-about-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .resume-info-about {
+        flex-grow: 1;
+        max-width: 200px;
+        min-width: 200px;
+    }
+
+
+    .resume-info-experience-container,
+    .resume-info-education-container,
+    .resume-info-skills-container,
+    .resume-info-work-container {
+        margin: 15px 0 15px 25px;
+    }
+
+    .resume-info-about lottie-player.lottie.web {
+        width: 100px;
+    }
+
+
+    .resume-nav-link-wrapper {
+        padding: 50px 0 0 50px;
+        display: block;
+    }
+
+    .resume-nav-item {
+        padding: 5px 0;
+        font-weight: 600;
+    }
+
+    .resume-profile-img {
+        display: block;
+        height: 125px;
+        padding-left: 25px;
+    }
+
+    .resume-profile-name {
+        position: relative;
+    }
+
+    .resume-menu-name,
+    .resume-menu-collapse {
+        display: none;
+    }
+
+    .resume-info-about {
+        margin: 15px 25px;
+    }
+
+    .resume-info-experience-details {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .resume-info-experience-collapse-container {
+        max-width: 600px;
+        margin: 20px 0;
+
+    }
+
+    .flex-shrink-0 {
+        flex-shrink: 0;
+    }
+
+    .click-me-to-show-experience {
+        font-weight: 400;
+        color: var(--darkJungleGreen);
+        opacity: 0.8;
+    }
+
+    .resume-info-education,
+    .resume-info-skills {
+        margin-bottom: 50px;
+    }
+
+
+    .resume-info-skills-design-tools li {
+        padding: 25px 30px 25px 0;
+        display: inline-block;
+    }
+
+    .resume-info-skills-design-tools li img,
+    .resume-info-skills-programming li img {
+        height: 50px;
+    }
+
+    .resume-info-skills-programming li {
+        padding: 15px 20px 15px 0;
+        display: inline-block;
+    }
+
+    .resume-info-skills-soft-skills li {
+        padding: 1px 0;
+    }
+
+
+    .resume-nav-item.download-resume {
+        margin-top: 100px;
+    }
+}

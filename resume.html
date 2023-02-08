@@ -14,12 +14,14 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/resume.css">
+
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
     <main class="wrapper">
-        <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">&#187;</button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#187;</button>
         <section id="top" class="top-section-work">
             <div class="top-section-wrapper-work">
                 <header class="navbar">
@@ -47,318 +49,331 @@
                                 style="fill: none; stroke: #E49678; stroke-linecap: round; stroke-width: 1.5" />
                         </svg>
                     </div>
-
                 </header>
                 <div class="social-icons">
                     <li class="github"><a href="https://github.com/rossivk" target=”_blank”>
                             <img src="images/github-brands.svg" height="24" alt="github"></a>
                     </li>
-                    <li class="linkedin"><a href="#"><img src="images/linkedin-in-brands.svg" height="24"
-                                alt="linkedin"></a></li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/rosica-kirkova-6677183a"
+                            target=”_blank”><img src="images/linkedin-in-brands.svg" height="24" alt="linkedin"></a>
+                    </li>
                 </div>
         </section>
         <section id="resume-menu-container">
             <div class="resume-menu">
                 <div class="resume-nav-menu">
                     <div class="resume-nav-container">
-                        <img class="resume-profile" src="./images/rossi.png" alt="profile picture.jpg">
-                        <div class="resume-nav-link-wrapper">
-                            <li class="resume-nav-item"><a href="#resume-about">ABOUT</a></li>
-                            <li class="resume-nav-item"><a href="#resume-experience">EXPERIENCE</a></li>
-                            <li class="resume-nav-item"><a href="#resume-education">EDUCATION</a></li>
-                            <li class="resume-nav-item"><a href="#resume-skills">SKILLS</a></li>
-                            <li class="resume-nav-item"><a href="#resume-work">WORK</a></li>
-                            <li class="resume-nav-item download-resume"><a
-                                    href="./assets/pdf/resume-2023-rosica-kirkova.pdf"
-                                    target="_blank">DOWNLOAD<br>RESUME</a></li>
+                        <img class="resume-profile-img" src="./images/rossi.png" alt="profile picture.jpg">
+                        <div class="resume-profile-name">
+                            <h3 class="resume-menu-name">Rosica Kirkova</h3>
+                            <p class="resume-menu-collapse">Resume Menu &#8597;</p>
+                            <ul class="resume-nav-link-wrapper">
+                                <li class="resume-nav-item"><a href="#resume-about">ABOUT</a></li>
+                                <li class="resume-nav-item"><a href="#resume-experience">EXPERIENCE</a></li>
+                                <li class="resume-nav-item"><a href="#resume-education">EDUCATION</a></li>
+                                <li class="resume-nav-item"><a href="#resume-skills">SKILLS</a></li>
+                                <li class="resume-nav-item"><a href="#resume-work">WORK</a></li>
+                                <li class="resume-nav-item download-resume"><a
+                                        href="./assets/pdf/resume-2023-rosica-kirkova.pdf"
+                                        target="_blank">DOWNLOAD<br>RESUME</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="resume-about">
-            <div class="resume-info">
-                <div class="resume-name">
-                    <h1>ROSICA <span class="color">KIRKOVA</span></h1>
-                    <h3>DESIGNER / DEVELOPER</h3>
-                </div>
-                <div class="resume-info-about-container">
-                    <div class="resume-info-about">
-                        <h3 class="resume-info-about-data">Before 2020</h3>
-                        <p>Over the years I have worked both independently and within a team to design and produce
-                            computer
-                            generated art work for marketing and promotional materials.
-                        </p>
+        <div class="resume-sections-wrapper">
+            <section id="resume-about">
+                <div class="resume-info">
+                    <div class="resume-name">
+                        <h1>ROSICA <span class="color">KIRKOVA</span></h1>
+                        <h3>DESIGNER / DEVELOPER</h3>
                     </div>
-                    <div class="resume-info-about">
-                        <h3 class="resume-info-about-data">May 2020</h3>
-                        <p>I started a personal blog.
-                            Turned out I was more interested of how things work than posting.
-                            <br> I have started learning<br><strong>- HTML
-                                and CSS.</strong>
-                        </p>
-                        <h4>Hello World!</h4>
-                        <lottie-player class="lottie web" src="animation/web.json" background="transparent" speed="1"
-                            hover>
-                        </lottie-player>
-                    </div>
-                    <div class="resume-info-about">
-                        <h3 class="resume-info-about-data">Oct 2021</h3>
-                        <p>Quickly realised I need more than CSS and HTML.
-                            <br><strong>-Programming Basic JS.</strong>
-                            <br>
-                            <br>
-                            <br>
-                        <p>Design work.</p>
-                        </p>
-                    </div>
-                    <div class="resume-info-about">
-                        <h3 class="resume-info-about-data">Feb 2022</h3>
-                        <p>Next stop
-                            <br><strong>-JS Fundamentals.</strong>
-                            <br>
-                            <br>
-                            <br>
-                        </p>
-                        <p>Design work.</p>
+                    <div class="resume-info-about-container">
+                        <div class="resume-info-about">
+                            <h3 class="resume-info-about-data">Before 2020</h3>
+                            <p>Over the years I have worked both independently and within a team to design and produce
+                                computer
+                                generated art work for marketing and promotional materials.
+                            </p>
+                        </div>
+                        <div class="resume-info-about">
+                            <h3 class="resume-info-about-data">May 2020</h3>
+                            <p>I started a personal blog.
+                                Turned out I was more interested of how things work than posting.
+                                <br> I have started learning<br><strong>- HTML
+                                    and CSS.</strong>
+                            </p>
+                            <h4>Hello World!</h4>
+                            <lottie-player class="lottie web" src="animation/web.json" background="transparent"
+                                speed="1" hover>
+                            </lottie-player>
+                        </div>
+                        <div class="resume-info-about">
+                            <h3 class="resume-info-about-data">Oct 2021</h3>
+                            <p>Quickly realised I need more than CSS and HTML.
+                                <br><strong>-Programming Basic JS.</strong>
+                                <br>
+                                <br>
+                                <br>
+                                <!-- <p>Design work.</p> -->
+                            </p>
+                        </div>
+                        <div class="resume-info-about">
+                            <h3 class="resume-info-about-data">Feb 2022</h3>
+                            <p>Next stop
+                                <br><strong>-JS Fundamentals.</strong>
+                                <br>
+                                <br>
+                                <br>
+                            </p>
+                            <!-- <p>Design work.</p> -->
 
-                    </div>
-                    <div class="resume-info-about">
-                        <h3 class="resume-info-about-data">Oct 2022</h3>
-                        <p>I still like JS
-                            <br><strong>-JS Advanced.</strong>
-                            <br>
-                            <br>
-                            <br>
-                        <p>Design work.</p>
-                        </p>
-                    </div>
-                    <div class="resume-info-about">
-                        <h3 class="resume-info-about-data">Feb 2023</h3>
-                        <p>Getting more interested.
-                            <br><strong>-JS Applications.</strong>
-                            <br>
-                            <br>
-                            <br>
-                        <p><a href="work.html"><strong>CURRENT PROJECTS</strong></a></p>
-                        </p>
-                    </div>
-                    <!-- <div class="resume-info-about">
+                        </div>
+                        <div class="resume-info-about">
+                            <h3 class="resume-info-about-data">Oct 2022</h3>
+                            <p>I still like JS
+                                <br><strong>-JS Advanced.</strong>
+                                <br>
+                                <br>
+                                <br>
+                                <!-- <p>Design work.</p> -->
+                            </p>
+                        </div>
+                        <div class="resume-info-about">
+                            <h3 class="resume-info-about-data">Feb 2023</h3>
+                            <p>Getting more interested.
+                                <br><strong>-JS Applications.</strong>
+                                <br>
+                                <br>
+                                <br>
+                            <p class="resume-info-about-current-projects"><a href="work.html"><strong>CURRENT
+                                        PROJECTS</strong></a></p>
+                            </p>
+                        </div>
+                        <!-- <div class="resume-info-about">
                         <h3 class="resume-info-about-data">Comming soon</h3>
                     </div> -->
+                    </div>
                 </div>
-            </div>
 
-        </section>
+            </section>
 
-        <hr class="section-divider">
+            <hr class="section-divider">
 
-        <section id="resume-experience">
-            <div class="resume-info">
-                <div class="resume-experience">
-                    <h2>EXPERIENCE</h2>
-                </div>
-                <div class="resume-info-experience-container">
-                    <div class="resume-info-experience">
-                        <div>
-                            <p class="resume-info-experience-company">FREELANCE <b> - 1YR 4MOS</b></p>
-                        </div>
-                        <div class="resume-info-experience-details">
+            <section id="resume-experience">
+                <div class="resume-info">
+                    <div class="resume-experience">
+                        <h2>EXPERIENCE</h2>
+                    </div>
+                    <div class="resume-info-experience-container">
+                        <div class="resume-info-experience">
                             <div>
-                                <h3 style="display:inline;">DESIGN & DEVELOPMENT</h3>
-                                <p style="display:inline;"><button class="click-me-to-show-experience">Main
-                                        Responsibilities &#8597</button></p>
-                                <div class="resume-info-experience-collapse-container">
-                                    <p class="resume-info-experience-collapse">
-                                        &#x25cf; Branding<br>
-                                        &#x25cf; Designing<br>
-                                        &#x25cf; Revamping<br>
-                                        &#x25cf; Developing<br> websites for small
-                                        businesses.<br>
-                                        &#x25cf; Photomontage.
-                                    </p>
+                                <p class="resume-info-experience-company">FREELANCE <b> - 1YR 4MOS</b></p>
+                            </div>
+                            <div class="resume-info-experience-details">
+                                <div>
+                                    <h3 style="display:inline;">DESIGN & DEVELOPMENT</h3>
+                                    <p style="display:inline;"><button class="click-me-to-show-experience">Main
+                                            Responsibilities &#8597</button></p>
+                                    <div class="resume-info-experience-collapse-container">
+                                        <p class="resume-info-experience-collapse">
+                                            &#x25cf; Branding<br>
+                                            &#x25cf; Designing<br>
+                                            &#x25cf; Revamping<br>
+                                            &#x25cf; Developing<br> websites for small
+                                            businesses.<br>
+                                            &#x25cf; Photomontage.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span><b>1yr 4mos</b>| Nov 2021 - Present</span>
                                 </div>
                             </div>
+                        </div>
+                        <div class="resume-info-experience">
                             <div>
-                                <span><b>1yr 4mos</b>| Nov 2021 - Present</span>
+                                <p class="resume-info-experience-company">FREELANCE - GENESIS OIL & GAS CONSULTANTS LTD.
+                                    <b>
+                                        - 7YR 4MOS</b>
+                                </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="resume-info-experience">
-                        <div>
-                            <p class="resume-info-experience-company">FREELANCE - GENESIS OIL & GAS CONSULTANTS LTD. <b>
-                                    - 7YR 4MOS</b></p>
-                        </div>
-                        <div class="resume-info-experience-details">
-                            <div>
-                                <h3 style="display:inline;">
-                                    GRAPHIC DESIGN, <span style="opacity:0.9; ">ANIMATIONS, </span><span
-                                        style="opacity:0.7;">PDMS CATS & SPECS</span> </h3>
-                                <p style="display:inline;"><button class="click-me-to-show-experience">Main
-                                        Responsibilities &#8597</button></p>
+                            <div class="resume-info-experience-details">
+                                <div>
+                                    <h3 style="display:inline;">
+                                        GRAPHIC DESIGN, <span style="opacity:0.9; ">ANIMATIONS, </span><span
+                                            style="opacity:0.7;">PDMS CATS & SPECS</span> </h3>
+                                    <p style="display:inline;"><button class="click-me-to-show-experience">Main
+                                            Responsibilities &#8597</button></p>
 
-                                <div class="resume-info-experience-collapse-container">
-                                    <p class="resume-info-experience-collapse"><b>GRAPHIC DESIGN</b> <br>
-                                        Working with the in house graphic design team.
-                                        The tasks included creating visual concepts, develop an overall layout and
-                                        production design for applications such as advertisements, brochures, magazines,
-                                        and reports.
-                                        <br><br>
-                                        <b style="opacity:0.7;">ANIMATIONS</b><br>
-                                        Creating animations fly through of a 3D model to help the client understand
-                                        clearly the model and how it will work.
-                                        <br><br>
-                                        <b style="opacity:0.5;">PDMS CATS & SPECS</b><br>
-                                        &#x25cf; Establishing and creating catalogues and specifications (various
-                                        projects) Maintaining the catalogues and specifications for 3D modelling in PDMS
-                                        and E3D environments in accordance with verified engineering specifications,
-                                        datasheets and reference materials provided by a client.<br>
-                                        &#x25cf; The catalogues and specifications are designed and created to include
-                                        valuable
-                                        information such as text details, materials, physical properties, nuts and bolts
-                                        or any information used in PDMS/E3D that is required for the output of 2D
-                                        drawings, bills of material/MTO, isometrics or client specific outputs.<br>
-                                        &#x25cf; A point of contact for piping layout designers and assist them with
-                                        new/updated
-                                        components throughout the project.
-                                        Project creation and maintaining it.
-                                    </p>
+                                    <div class="resume-info-experience-collapse-container">
+                                        <p class="resume-info-experience-collapse"><b>GRAPHIC DESIGN</b> <br>
+                                            Working with the in house graphic design team.
+                                            The tasks included creating visual concepts, develop an overall layout and
+                                            production design for applications such as advertisements, brochures,
+                                            magazines,
+                                            and reports.
+                                            <br><br>
+                                            <b style="opacity:0.7;">ANIMATIONS</b><br>
+                                            Creating animations fly through of a 3D model to help the client understand
+                                            clearly the model and how it will work.
+                                            <br><br>
+                                            <b style="opacity:0.5;">PDMS CATS & SPECS</b><br>
+                                            &#x25cf; Establishing and creating catalogues and specifications (various
+                                            projects) Maintaining the catalogues and specifications for 3D modelling in
+                                            PDMS
+                                            and E3D environments in accordance with verified engineering specifications,
+                                            datasheets and reference materials provided by a client.<br>
+                                            &#x25cf; The catalogues and specifications are designed and created to
+                                            include
+                                            valuable
+                                            information such as text details, materials, physical properties, nuts and
+                                            bolts
+                                            or any information used in PDMS/E3D that is required for the output of 2D
+                                            drawings, bills of material/MTO, isometrics or client specific outputs.<br>
+                                            &#x25cf; A point of contact for piping layout designers and assist them with
+                                            new/updated
+                                            components throughout the project.
+                                            Project creation and maintaining it.
+                                        </p>
 
 
 
+                                    </div>
+                                </div>
+
+                                <div class="flex-shrink-0">
+                                    <span><b>7yr 4mos</b>| Oct 2012 - Mar 2020</span>
                                 </div>
                             </div>
-
-                            <div class="flex-shrink-0">
-                                <span><b>7yr 4mos</b>| Oct 2012 - Mar 2020</span>
-                            </div>
                         </div>
-                    </div>
-                    <div class="resume-info-experience">
-                        <div>
-                            <p class="resume-info-experience-company">GLA ARCHITECTURE & DESIGN
-                                LTD. <b>- 4YR 5MOS</b></p>
-                        </div>
-                        <div class="resume-info-experience-details">
+                        <div class="resume-info-experience">
                             <div>
-                                <h3 style="display:inline;">ARCHITECT's ASSISTANT</h3>
-                                <p style="display:inline;"><button class="click-me-to-show-experience">Main
-                                        Responsibilities &#8597</button></p>
-                                <div class="resume-info-experience-collapse-container">
-                                    <p class="resume-info-experience-collapse">
-                                        &#x25cf; Creating 3D models from architectural plans.<br>
-                                        &#x25cf; Enhancing renders of the model and adding special. <br>
-                                        &#x25cf; Preparing detailed working drawings and specifications.<br>
-                                        &#x25cf; Performing drafting tasks and research for the purpose of project
-                                        plans.<br>
-                                        &#x25cf; 2D space planning, electrical and design detailed drawings.<br>
-                                    </p>
+                                <p class="resume-info-experience-company">GLA ARCHITECTURE & DESIGN
+                                    LTD. <b>- 4YR 5MOS</b></p>
+                            </div>
+                            <div class="resume-info-experience-details">
+                                <div>
+                                    <h3 style="display:inline;">ARCHITECT's ASSISTANT</h3>
+                                    <p style="display:inline;"><button class="click-me-to-show-experience">Main
+                                            Responsibilities &#8597</button></p>
+                                    <div class="resume-info-experience-collapse-container">
+                                        <p class="resume-info-experience-collapse">
+                                            &#x25cf; Creating 3D models from architectural plans.<br>
+                                            &#x25cf; Enhancing renders of the model and adding special. <br>
+                                            &#x25cf; Preparing detailed working drawings and specifications.<br>
+                                            &#x25cf; Performing drafting tasks and research for the purpose of project
+                                            plans.<br>
+                                            &#x25cf; 2D space planning, electrical and design detailed drawings.<br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span><b>4yr 5mos</b>| May 2008 - Oct 2012</span>
                                 </div>
                             </div>
-
-                            <div>
-                                <span><b>4yr 5mos</b>| May 2008 - Oct 2012</span>
-                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
-        </section>
 
-        <hr class="section-divider">
+            </section>
 
-        <section id="resume-education">
-            <div class="resume-info">
-                <div class="resume-education">
-                    <h2>EDUCATION</h2>
-                </div>
-                <div class="resume-info-education-container">
-                    <div class="resume-info-education">
-                        <h3 class="resume-info-education-data">ARCHITECTURE, BA Hons</h3>
-                        <p> University of Greenwich<br> London
-                        </p>
+            <hr class="section-divider">
+
+            <section id="resume-education">
+                <div class="resume-info">
+                    <div class="resume-education">
+                        <h2>EDUCATION</h2>
                     </div>
-                    <div class="resume-info-education">
-                        <h3 class="resume-info-education-data">WOODWORKING & FURNITURE PRODUCTION, ENGINEER <br>
-                            Bachelor degree
-                        </h3>
-                        <p>University of Forestry<br>
-                            Department -Furniture design<br> Sofia, Bulgaria
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <hr class="section-divider">
-
-        <section id="resume-skills">
-            <div class="resume-info">
-                <div class="resume-skills">
-                    <h2>SKILLS</h2>
-                </div>
-                <div class="resume-info-skills-container">
-                    <div class="resume-info-skills">
-                        <h3 class="resume-info-skills-data">PROGRAMMING LANGUAGES & TOOLS</h3>
-                        <ul class="resume-info-skills-programming">
-                            <li><img src="./assets/svg/html.svg" alt="html.jpeg"></li>
-                            <li><img src="./assets/svg/css.svg" alt="css.jpeg"></li>
-                            <li><img src="./assets/svg/js.svg" alt="js.jpeg">
-                            </li>
-                            <li><img src="./assets/svg/github.svg" alt="github.jpeg"></li>
-
-                        </ul>
-                    </div>
-                    <div class="resume-info-skills">
-                        <h3 class="resume-info-skills-data">DESIGN TOOLS </h3>
-                        <ul class="resume-info-skills-design-tools">
-                            <li><img src="./assets/png/figma.png" alt="html.jpeg"></li>
-                            <li><img src="./assets/png/photoshop.png" alt="css.jpeg"></li>
-                            <li><img src="./assets/png/illustrator.png" alt="css.jpeg"></li>
-                            <li><img src="./assets/png/after-effects.png" alt="css.jpeg"></li>
-                            <li><img src="./assets/png/3dsmax.png" alt="css.jpeg"></li>
-                            <li><img src="./assets/png/autocad.png" alt="css.jpeg"></li>
-                            <li><img src="./assets/png/navis.png" alt="css.jpeg"></li>
-                            <li><img src="./assets/png/aveva.png" alt="css.jpeg"></li>
-                        </ul>
-                    </div>
-
-                    <div class="resume-info-skills">
-                        <h3 class="resume-info-skills-data">SOFT SKILLS</h3>
-                        <ul class="resume-info-skills-soft-skills">
-                            <li>&#8250; Self motivated</li>
-                            <li>&#8250; Teamwork</li>
-                            <li>&#8250; Creativity</li>
-                            <li>&#8250; Dedicated</li>
-                            <li>&#8250; Proactive</li>
-                            <li>&#8250; Problem solving</li>
-                        </ul>
+                    <div class="resume-info-education-container">
+                        <div class="resume-info-education">
+                            <h3 class="resume-info-education-data">ARCHITECTURE, BA Hons</h3>
+                            <p> University of Greenwich<br> London
+                            </p>
+                        </div>
+                        <div class="resume-info-education">
+                            <h3 class="resume-info-education-data">WOODWORKING & FURNITURE PRODUCTION, ENGINEER <br>
+                                Bachelor degree
+                            </h3>
+                            <p>University of Forestry<br>
+                                Department -Furniture design<br> Sofia, Bulgaria
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
+            </section>
 
-        <hr class="section-divider">
+            <hr class="section-divider">
 
-        <section id="resume-work">
-            <div class="resume-info">
-                <div class="resume-work">
-                    <h2>WORK</h2>
-                </div>
-                <div class="resume-info-work-container">
-                    <div class="resume-info-work">
-                        <h3 class="resume-info-work-data"><a href="work.html">LINK TO MY WORK</a></h3>
-                        <ul class="resume-info-work">
-                            <li>Detailed work process coming soon.</li>
-                        </ul>
+            <section id="resume-skills">
+                <div class="resume-info">
+                    <div class="resume-skills">
+                        <h2>SKILLS</h2>
                     </div>
+                    <div class="resume-info-skills-container">
+                        <div class="resume-info-skills">
+                            <h3 class="resume-info-skills-data">PROGRAMMING LANGUAGES & TOOLS</h3>
+                            <ul class="resume-info-skills-programming">
+                                <li><img src="./assets/svg/html.svg" alt="html.jpeg"></li>
+                                <li><img src="./assets/svg/css.svg" alt="css.jpeg"></li>
+                                <li><img src="./assets/svg/js.svg" alt="js.jpeg">
+                                </li>
+                                <li><img src="./assets/svg/github.svg" alt="github.jpeg"></li>
 
+                            </ul>
+                        </div>
+                        <div class="resume-info-skills">
+                            <h3 class="resume-info-skills-data">DESIGN TOOLS </h3>
+                            <ul class="resume-info-skills-design-tools">
+                                <li><img src="./assets/png/figma.png" alt="html.jpeg"></li>
+                                <li><img src="./assets/png/photoshop.png" alt="css.jpeg"></li>
+                                <li><img src="./assets/png/illustrator.png" alt="css.jpeg"></li>
+                                <li><img src="./assets/png/after-effects.png" alt="css.jpeg"></li>
+                                <li><img src="./assets/png/3dsmax.png" alt="css.jpeg"></li>
+                                <li><img src="./assets/png/autocad.png" alt="css.jpeg"></li>
+                                <li><img src="./assets/png/navis.png" alt="css.jpeg"></li>
+                                <li><img src="./assets/png/aveva.png" alt="css.jpeg"></li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-info-skills">
+                            <h3 class="resume-info-skills-data">SOFT SKILLS</h3>
+                            <ul class="resume-info-skills-soft-skills">
+                                <li>&#8250; Self motivated</li>
+                                <li>&#8250; Teamwork</li>
+                                <li>&#8250; Creativity</li>
+                                <li>&#8250; Dedicated</li>
+                                <li>&#8250; Proactive</li>
+                                <li>&#8250; Problem solving</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+
+            <hr class="section-divider">
+
+            <section id="resume-work">
+                <div class="resume-info">
+                    <div class="resume-work">
+                        <h2>WORK</h2>
+                    </div>
+                    <div class="resume-info-work-container">
+                        <div class="resume-info-work">
+                            <h3 class="resume-info-work-data"><a href="work.html">LINK TO MY WORK</a></h3>
+                            <ul class="resume-info-work">
+                                <li>Detailed work process coming soon.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
 
     </main>
 
@@ -366,10 +381,11 @@
         <div class="keep-in-touch">
             <h6>Keep In Touch</h6>
             <div class="social-icons">
-                <li class="github"><a href="#"><img src="images/github-brands-125B62.svg" height="24" alt="github"></a>
+                <li class="github"><a href="https://github.com/rossivk" target=”_blank”><img
+                            src="images/github-brands-125B62.svg" height="24" alt="github"></a>
                 </li>
-                <li class="linkedin"><a href="#"><img src="images/linkedin-in-brands-125B62.svg" height="24"
-                            alt="linkedin"></a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/in/rosica-kirkova-6677183a/" target=”_blank”><img
+                            src="images/linkedin-in-brands-125B62.svg" height="24" alt="linkedin"></a></li>
                 <!-- <li class="twitter"><a href="#"><img src="images/twitter-brands-125B62.svg" height="24"
                             alt="twitter"></a>
                 </li>
@@ -382,8 +398,11 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
     <script src="index.js" charset="utf-8"></script>
     <script src="back-to-top-button.js" charset="utf-8"></script>
+    <script src="resume.js" charset="utf-8"></script>
+
 
 
 </body>

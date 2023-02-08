@@ -58,13 +58,13 @@ li {
 }
 
 h1 {
-    font-size: 2.25em;
+    font-size: 1.75em;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 900;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'Red Hat Text', sans-serif;
 
 }
@@ -754,15 +754,11 @@ button:hover {
     margin: 25px 0 50px;
 }
 
-.work-cover-text {
-    margin: 25px 50px;
-}
 
 .top-section-work {
     position: relative;
     opacity: 1;
     margin: 0 10vw;
-    /* height: 100vh; */
     max-height: 900px;
 }
 
@@ -770,7 +766,6 @@ button:hover {
     position: relative;
     opacity: 1;
     margin: 0 10vw;
-    /* height: 100vh; */
     max-height: 900px;
 }
 
@@ -834,7 +829,7 @@ button:hover {
 }
 
 
-/********** media screen ****************/
+/********** screen above 800px ****************/
 
 
 @media screen and (min-width: 800px) {
@@ -944,171 +939,8 @@ button:hover {
 
 /* ****************************/
 
-.section-divider {
-    margin: 0;
-    border-top: 0.5px solid var(--darkSalmon);
-}
 
-#resume-menu-container {
-    text-align: left;
-    max-width: 1200px;
-    margin: 0 auto;
-
-}
-
-.resume-menu {
-    background: var(--backgroundBlueGreen);
-    height: 100vh;
-    width: 200px;
-    position: fixed;
-    top: 0;
-    padding-top: 125px;
-}
-
-#resume-about,
-#resume-experience,
-#resume-education,
-#resume-skills,
-#resume-work {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 0 50px;
-    text-align: left;
-
-}
-
-
-
-
-.resume-info {
-    background: var(--backgroundCoralLight);
-    margin-left: 250px;
-}
-
-.resume-name,
-.resume-experience,
-.resume-education,
-.resume-skills,
-.resume-work {
-    margin: 0 0 50px 25px;
-}
-
-.resume-info-about-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    /* margin: 50px 0; */
-}
-
-.resume-info-about {
-    flex-grow: 1;
-    max-width: 200px;
-    min-width: 200px;
-    margin: 15px 25px;
-}
-
-
-.resume-info-experience-container,
-.resume-info-education-container,
-.resume-info-skills-container,
-.resume-info-work-container {
-    margin: 15px 0 15px 25px;
-}
-
-.resume-info-about-data {
-    background-color: var(--darkSalmon);
-}
-
-.resume-info-experience-company {
-    background-color: #e4977837;
-    padding: 5px 0;
-    margin: 50px 0 25px
-}
-
-
-.resume-info-about lottie-player.lottie.web {
-    height: 75px;
-    width: 100px;
-}
-
-
-.resume-nav-link-wrapper {
-    padding: 50px 0 0 50px;
-}
-
-.resume-nav-item {
-    padding: 5px 0;
-    font-weight: 600;
-}
-
-.resume-profile {
-    height: 125px;
-    padding-left: 25px;
-}
-
-.resume-info-experience-details {
-    display: flex;
-    justify-content: space-between;
-}
-
-.resume-info-experience-collapse {
-    display: none;
-
-}
-
-.resume-info-experience-collapse-container {
-    max-width: 600px;
-    margin: 20px 0;
-
-}
-
-.flex-shrink-0 {
-    flex-shrink: 0;
-}
-
-.click-me-to-show-experience {
-    font-weight: 400;
-    color: var(--darkJungleGreen);
-    opacity: 0.8;
-}
-
-.resume-info-education,
-.resume-info-skills {
-    margin-bottom: 50px;
-}
-
-.resume-info-skills,
-.resume-info-work ul {
-    padding: 0;
-}
-
-.resume-info-skills-design-tools li {
-    padding: 15px 30px 15px 0;
-    display: inline-block;
-}
-
-.resume-info-skills-design-tools li img,
-.resume-info-skills-programming li img {
-    height: 50px;
-}
-
-.resume-info-skills-programming li {
-    padding: 15px 20px 15px 0;
-    display: inline-block;
-}
-
-.resume-info-skills-soft-skills li {
-    padding: 1px 0;
-}
-
-.resume-nav-item.download-resume {
-    font-size: 12px;
-    margin-top: 100px;
-    background-color: var(--middleBlueGreen);
-
-}
-
-#myBtn {
+button#myBtn {
     display: none;
     position: fixed;
     bottom: 15px;
