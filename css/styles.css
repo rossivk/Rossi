@@ -140,7 +140,7 @@ button:hover {
     z-index: -1;
 }
 
-/* header */
+/********************* header ************************/
 
 
 .navbar {
@@ -155,17 +155,30 @@ button:hover {
     z-index: 5;
 }
 
-
 .nav-container {
     position: absolute;
     right: 0px;
     top: 0px;
     background-color: var(--middleBlueGreen);
-    padding-bottom: 50px;
     width: 100%;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    transform: scale(1, 0);
+    transform-origin: top;
     z-index: 1;
 }
 
+.nav-container.active {
+    opacity: 1;
+    transform: scale(1, 1);
+    transform-origin: top;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
 
 .nav-link-wrapper {
     display: flex;
@@ -173,8 +186,10 @@ button:hover {
     justify-content: space-around;
     width: 50%;
     text-align: center;
-    margin: 50px auto 0;
+    margin: 50px auto;
 }
+
+
 
 .nav-link-wrapper li {
     margin: 10px 0;
@@ -184,13 +199,77 @@ button:hover {
     position: absolute;
     right: 0;
     top: -30px;
-    width: 25px;
+    z-index: 2;
+}
+
+
+.toggle {
+    position: relative;
     height: 25px;
+    width: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    cursor: pointer;
+    overflow: hidden;
 }
+
+.toggle span {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+
+}
+
+.toggle span:nth-child(1) {
+    background-color: var(--darkJungleGreen);
+    transform: translateY(-10px);
+}
+
+.toggle span:nth-child(2) {
+    background-color: var(--midnightGreen);
+    transform: translateY(-3px);
+    width: 20px;
+    left: 5px;
+}
+
+.toggle span:nth-child(3) {
+    background-color: var(--middleBlueGreen);
+    transform: translateY(3px);
+    width: 20px;
+    left: 0;
+}
+
+.toggle span:nth-child(4) {
+    background-color: var(--darkSalmon);
+    transform: translateY(10px);
+}
+
+.toggle.active span:nth-child(1) {
+    transform: translateY(0px) rotate(45deg);
+    transition-delay: 0.125s;
+}
+
+.toggle.active span:nth-child(2) {
+    transform: translateX(-40px);
+    transition-delay: 0.25s;
+}
+
+.toggle.active span:nth-child(3) {
+    transform: translateX(40px);
+    transition-delay: 0.25s;
+}
+
+.toggle.active span:nth-child(4) {
+    transform: translateY(0px) rotate(315deg);
+    transition-delay: 0.125s;
+}
+
 
 /* *********************************** */
 
@@ -355,17 +434,8 @@ button:hover {
     scale: 1.5;
 }
 
-.top-section-box-left img {
-    position: absolute;
-    left: -100px;
-    top: 55%;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    display: none;
-}
 
-
-.top-section-box-right img {
+.top-section-box img {
     position: absolute;
     left: 0;
     bottom: -37.5px;
@@ -373,22 +443,22 @@ button:hover {
     -webkit-animation: spin 30s linear infinite;
     -moz-animation: spin 30s linear infinite;
     animation: spin 30s linear infinite;
-    animation-name: spinUpDown;
+    animation-name: spinAround;
 }
 
-@-moz-keyframes spinUpDown {
+@-moz-keyframes spinAround {
     100% {
         -moz-transform: rotate(360deg);
     }
 }
 
-@-webkit-keyframes spinUpDown {
+@-webkit-keyframes spinAround {
     100% {
         -webkit-transform: rotate(360deg);
     }
 }
 
-@keyframes spinUpDown {
+@keyframes spinAround {
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -764,7 +834,7 @@ button:hover {
 
 .top-section-work {
     position: relative;
-    opacity: 1;
+    /* opacity: 1; */
     margin: 0 10vw;
     max-height: 900px;
 }
@@ -937,7 +1007,7 @@ button:hover {
 
 }
 
-/* ****************************/
+/*****************************/
 
 
 button#myBtn {
@@ -956,3 +1026,6 @@ button#myBtn {
     font-size: 20px;
     rotate: -90deg;
 }
+
+
+/*****************************/
