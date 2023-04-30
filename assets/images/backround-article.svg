@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_2-2" data-name="Layer 2">
+      <g id="bacground">
+        <polygon points="599.22 0 0 0 0 600 0 600 599.22 0" fill="#e59678" opacity="0.5"/>
+        <polygon points="600 0 0.78 0 79.15 600 79.15 600 600 0" fill="#e59678" opacity="0.5"/>
+        <polygon points="600 0 0 0 164.9 600 164.9 600 600 0" fill="#e59678" opacity="0.5"/>
+        <polygon points="599.22 0 0 0 236.06 600 236.06 600 599.22 0" fill="#e59678" opacity="0.5"/>
+        <polygon points="600 0 0.78 0 322.32 600 322.32 600 600 0" fill="#e59678" opacity="0.5"/>
+        <polygon points="600 0 0.78 0 402.35 600 402.35 600 600 0" fill="#e59678" opacity="0.5"/>
+        <polygon points="599.22 0 0 0 488.46 600 488.46 600 599.22 0" fill="#e59678" opacity="0.5"/>
+        <polygon points="599.65 0 0.43 0 599.65 600 599.65 600 599.65 0" fill="#e59678" opacity="0.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

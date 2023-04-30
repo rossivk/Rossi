@@ -1,0 +1,352 @@
+/*********** work ******************/
+#work {
+    position: relative;
+}
+
+#work h1 {
+    max-width: 30ch;
+    margin: 80px 0 20px;
+    text-align: left;
+}
+
+.pageheader.qes,
+.pageheader.lift-weight,
+.pageheader.iron-phoenix {
+    color: aliceblue;
+}
+
+.work-wrapper {
+    padding: 0 15px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.work-title-container {
+    position: relative;
+    height: 100vh;
+    /* height: calc(100vh - 100px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* .work-title-container::before {
+    background: #10385a;
+    background: linear-gradient(0deg, #191a16, rgba(16, 56, 90, 0));
+    bottom: 0;
+    content: "";
+    height: 85%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    z-index: -1;
+} */
+
+.work-title-container h5,
+.work-title-container p {
+    max-width: 550px;
+    text-align: left;
+    color: var(--azureXwebColor);
+}
+
+.work-title-container p {
+    margin-bottom: 100px;
+}
+
+/* .pageheader {
+    display: block;
+    margin-bottom: 300px;
+} */
+
+.work-title {
+    position: relative;
+}
+
+.work-title::before {
+    content: 'Work';
+    position: absolute;
+    top: -2rem;
+    left: -10px;
+    font-size: 3rem;
+    color: var(--azureXwebColor);
+    z-index: -1;
+}
+
+
+.work-projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* max-width: 1000px; */
+    overflow: hidden;
+}
+
+.work-projects-wrapper {
+    margin: 25px 0;
+}
+
+.work-projects-wrapper img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+
+}
+
+
+.work-project-card {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    /* background-color: burlywood; */
+    margin-bottom: 30px;
+}
+
+
+
+.work-project-card-content {
+    height: 100%;
+    width: 100%;
+}
+
+.project-cover,
+.project-cover1,
+.project-cover2,
+.project-cover3,
+.project-cover4,
+.project-cover5,
+.project-cover6 {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-cover {
+    background-image: url(../assets/images/weighlifting-app/weightlifting-app-cover1-.jpg);
+}
+
+.project-cover1 {
+    background-image: url(../assets/images/qes/wall-logo-mockup-ripples.jpg);
+}
+
+.project-cover2 {
+    background-image: url(../assets/images/hep/herts-essex-stamp.jpg);
+}
+
+.project-cover3 {
+    background-image: url(../assets/images/digital-campain/digital-campain_Shared-Link-Thumbnail.jpg);
+}
+
+.project-cover4 {
+    background-image: url(../assets/images/lp/lp-cover.png);
+}
+
+.work-cover {
+    margin: 25px 0 50px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--darkJungleGreen);
+}
+
+.work-project-card:hover .overlay {
+    opacity: 0.85;
+}
+
+.text {
+    color: white;
+    /* font-size: 20px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.top-section-work .social-icons {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+}
+
+.top-section-work .social-icons li img {
+    max-width: none;
+    margin-left: 25px;
+}
+
+.work-image {
+    max-width: 100%;
+    filter: grayscale(90%);
+    transition: transform .75s;
+}
+
+.work-image:hover {
+    filter: none;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--darkJungleGreen);
+}
+
+
+
+
+/* ********************************************* */
+
+
+@media screen and (min-width: 500px) {
+    #work h1 {
+        margin: 100px 0 20px;
+    }
+
+    .work-project-card {
+        height: 250px;
+        width: 48%;
+    }
+
+    .work-title::before {
+
+        top: -3rem;
+        left: -10px;
+        font-size: 5rem;
+
+    }
+
+    .work-projects-wrapper {
+        margin: 50px 0;
+    }
+
+    .work-projects-wrapper img {
+
+        margin-bottom: 50px;
+
+    }
+
+    .video-logo-mockups {
+        display: flex;
+    }
+
+    .logo-mockup,
+    .video-mockup {
+        width: 50%;
+    }
+
+}
+
+/******* Lift weights ********/
+
+.background-lift-weight {
+    background-image: url(../assets/images/weighlifting-app/weightlifting-app-cover1-.jpg);
+
+}
+
+/**************************digital-campain*/
+.background-iron-phoenix {
+    background-image: url(../assets/images/digital-campain/cover-image-web.jpg);
+
+}
+
+
+.work-projects-wrapper-digital-campain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-projects-wrapper-digital-campain div {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+
+/* qes */
+.background-qes {
+    background-image: url(../assets/images/qes/wall-logo-mockup-ripples.jpg);
+}
+
+.background-qes,
+.background-lift-weight,
+.background-iron-phoenix,
+.background-hep,
+.background-lp {
+    background-size: cover;
+    background-position: top;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+.background-qes::after,
+.background-lift-weight::after,
+.background-iron-phoenix::after,
+.background-hep::after,
+.background-lp::after {
+    background: var(--backgroundBlueGreen);
+    background: linear-gradient(0deg, #082629, rgba(8, 38, 41, 0));
+    bottom: 0;
+    content: "";
+    height: 85%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+.background-qes::before,
+.background-lift-weight::before,
+.background-iron-phoenix::before,
+.background-hep::before,
+.background-lp::before {
+    background: #191a16;
+    background: linear-gradient(0deg, rgba(217, 233, 231, 0), #D9E9E7);
+    top: 0;
+    content: "";
+    height: 35%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+.work-title.qes::before,
+.work-title.lift-weight::before,
+.work-title.iron-phoenix::before,
+.background-lp::before {
+    content: '';
+}
+
+#work h2 {
+    max-width: 15ch;
+    margin: 30px 0;
+    text-align: left;
+}
+
+/*******herts and essex*************/
+
+.background-hep {
+    background-image: url(../assets/images/hep/hep-gold-cover4.jpg);
+}
+
+/*******lp*************/
+
+.background-lp {
+    background-image: url(../assets/images/lp/lp-cover.png);
+}
