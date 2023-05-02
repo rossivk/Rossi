@@ -1,12 +1,21 @@
 /*********** work ******************/
-#work {
-    position: relative;
-}
 
-#work h1 {
+
+.work-title {
+    position: relative;
     max-width: 30ch;
     margin: 80px 0 20px;
     text-align: left;
+}
+
+.work-title::before {
+    content: 'Work';
+    position: absolute;
+    top: -2rem;
+    left: -10px;
+    font-size: 3rem;
+    color: var(--azureXwebColor);
+    z-index: -1;
 }
 
 .pageheader.qes,
@@ -59,19 +68,7 @@
     margin-bottom: 300px;
 } */
 
-.work-title {
-    position: relative;
-}
 
-.work-title::before {
-    content: 'Work';
-    position: absolute;
-    top: -2rem;
-    left: -10px;
-    font-size: 3rem;
-    color: var(--azureXwebColor);
-    z-index: -1;
-}
 
 
 .work-projects-wrapper {
