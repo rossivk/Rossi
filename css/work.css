@@ -3,16 +3,16 @@
 
 .work-title {
     position: relative;
-    max-width: 30ch;
+    /* max-width: 30ch; */
     margin: 80px 0 20px;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .work-title::before {
     content: 'Work';
     position: absolute;
     top: -2rem;
-    left: -10px;
+    /* left: -10px; */
     font-size: 3rem;
     color: var(--azureXwebColor);
     z-index: -1;
@@ -25,7 +25,7 @@
 }
 
 .work-wrapper {
-    padding: 0 15px;
+    /* padding: 0 15px; */
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -86,7 +86,7 @@
 .work-projects-wrapper img {
     width: 100%;
     height: auto;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 
 }
 
@@ -213,20 +213,19 @@
     }
 
     .work-title::before {
-
         top: -3rem;
-        left: -10px;
+        /* left: -10px; */
         font-size: 5rem;
 
     }
 
     .work-projects-wrapper {
-        margin: 50px 0;
+        margin: 5px 0 50px;
     }
 
     .work-projects-wrapper img {
 
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
 
     }
 
