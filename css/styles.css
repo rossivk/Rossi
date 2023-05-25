@@ -192,7 +192,8 @@ button:hover {
     /* text-align: left; */
 }
 
-.about-title {
+.about-title,
+.temporary-title {
     position: relative;
     margin-top: 125px;
 }
@@ -205,8 +206,13 @@ button:hover {
     content: 'About';
 }
 
+.temporary-title::before {
+    content: 'Temporary';
+}
+
 .index-title::before,
-.about-title::before {
+.about-title::before,
+.temporary-title::before {
     font-size: 3rem;
     position: absolute;
     top: -2rem;
