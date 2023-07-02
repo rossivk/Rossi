@@ -20,7 +20,8 @@
 
 .pageheader.qes,
 .pageheader.lift-weight,
-.pageheader.iron-phoenix {
+.pageheader.iron-phoenix,
+.pageheader.sports-massage {
     color: aliceblue;
 }
 
@@ -139,6 +140,10 @@
     background-image: url(../assets/images/lp/lp-cover-dust.jpg);
 }
 
+.project-cover5 {
+    background-image: url(../assets/images/sports-massage-a/DSC02864-mockup-logo-back.jpg);
+}
+
 .work-cover {
     margin: 25px 0 50px;
 }
@@ -198,7 +203,9 @@
 }
 
 
-
+.sports-massage-flex-presentation {
+    display: flex;
+}
 
 /* ********************************************* */
 
@@ -276,7 +283,8 @@
 .background-lift-weight,
 .background-iron-phoenix,
 .background-hep,
-.background-lp {
+.background-lp,
+.background-sports-massage {
     background-size: cover;
     background-position: top;
     width: 100vw;
@@ -293,7 +301,8 @@
 .background-lift-weight::after,
 .background-iron-phoenix::after,
 .background-hep::after,
-.background-lp::after {
+.background-lp::after,
+.background-sports-massage::after {
     background: var(--backgroundBlueGreen);
     background: linear-gradient(0deg, #082629, rgba(8, 38, 41, 0));
     bottom: 0;
@@ -310,7 +319,8 @@
 .background-lift-weight::before,
 .background-iron-phoenix::before,
 .background-hep::before,
-.background-lp::before {
+.background-lp::before,
+.background-sports-massage::before {
     background: #191a16;
     background: linear-gradient(0deg, rgba(217, 233, 231, 0), #D9E9E7);
     top: 0;
@@ -346,4 +356,9 @@
 
 .background-lp {
     background-image: url(../assets/images/lp/001-ogo-wall-mockup.jpg);
+}
+
+.background-sports-massage {
+    background-image: url(../assets/images/sports-massage-a/ThermoBottle02--.jpg);
+
 }
